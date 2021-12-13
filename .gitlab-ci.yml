@@ -1,0 +1,26 @@
+---
+before_script:
+  - dnf install python36
+  - pip3 install -r requirements.txt
+
+test:
+  image: rockylinux:latest
+  stage: test
+  script:
+    - mkdocs build --script --verbose --site-dir test
+  artifacts:
+    paths:
+      - test
+  except:
+    - main
+
+pages:
+  stage: deploy
+  script:
+    - mkdocs build --verbose
+  artifacts:
+    paths:
+      - public
+    only:
+      - main
+...
