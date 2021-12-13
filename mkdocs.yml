@@ -2,7 +2,7 @@
 site_name: SIG/Core Wiki
 site_url: https://core.sig.rockylinux.io
 theme:
-  name: windmill
+  name: cinder
   highlightjs: true
   hljs_languages:
     - bash
