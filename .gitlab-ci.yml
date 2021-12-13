@@ -1,10 +1,9 @@
 ---
 before_script:
-  - dnf install python36
-  - pip3 install -r requirements.txt
+  - apk add --update --no-cache python3 py3-pip
+  - /usr/bin/pip3 install -r requirements.txt
 
 test:
-  image: "rockylinux:latest"
   stage: test
   script:
     - mkdocs build --script --verbose --site-dir test
