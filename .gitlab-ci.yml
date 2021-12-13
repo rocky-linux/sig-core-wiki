@@ -4,7 +4,7 @@ before_script:
   - pip3 install -r requirements.txt
 
 test:
-  image: rockylinux:latest
+  image: "rockylinux:latest"
   stage: test
   script:
     - mkdocs build --script --verbose --site-dir test
