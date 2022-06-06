@@ -1,6 +1,13 @@
 ---
 site_name: SIG/Core Wiki
-site_url: https://core.sig.rockylinux.io
+site_url: https://core.sig.rocky.page
+site_description: >-
+  The wiki for the Core SIG of Rocky.
+
+repo_url: https://git.resf.org/sig_core/wiki
+repo_name: sig_core/wiki
+edit_uri: edit/main/docs/
+
 theme:
   name: cinder
   highlightjs: true
@@ -23,5 +30,18 @@ markdown_extensions:
   - footnotes
   - def_list
   - meta
-copyright: Copyright &copy; 2021 Rocky Enterprise Software Foundation
+  - pymdownx.details # this allows collapsible attributions
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - autolinks
+  - awesome-pages
+  - git-revision-date
+  - search
+copyright: Copyright &copy; 2022 Rocky Enterprise Software Foundation
 ...
