@@ -1,9 +1,11 @@
 ---
+# Wiki information
 site_name: SIG/Core Wiki
 site_url: https://core.sig.rocky.page
 site_description: >-
-  The wiki for the Core SIG of Rocky.
+  The wiki for Core SIG.
 
+# Repository
 repo_url: https://git.resf.org/sig_core/wiki
 repo_name: sig_core/wiki
 edit_uri: edit/main/docs/
@@ -20,23 +22,25 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
+    - search.highlight
     - search.suggest
+    - toc.integrate
 markdown_extensions:
   - abbr
-  - attr_list
   - admonition
-  - toc:
-      permalink: true
-  - footnotes
+  - attr_list
   - def_list
+  - footnotes
   - meta
-  - pymdownx.details # this allows collapsible attributions
+  - pymdownx.details # collapsable attributions
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - toc:
+      permalink: true
 
 plugins:
   - autolinks
