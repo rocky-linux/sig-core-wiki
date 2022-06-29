@@ -3,7 +3,7 @@
 site_name: SIG/Core Wiki
 site_url: https://core.sig.rocky.page
 site_description: >-
-  The wiki for Core SIG.
+  The wiki for Rocky Linux Core SIG.
 
 # Repository
 repo_url: https://git.resf.org/sig_core/wiki
@@ -47,5 +47,7 @@ plugins:
   - awesome-pages
   - git-revision-date
   - search
+  - macros:
+      include_dir: docs/include
 copyright: Copyright &copy; 2022 Rocky Enterprise Software Foundation
 ...
