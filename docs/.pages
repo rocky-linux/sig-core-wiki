@@ -2,6 +2,6 @@
 nav:
   - ... | index.md
   - ... | about.md
-  - Documentation | documentation
-  - SOP | sop
+  - Documentation: documentation
+  - SOP: sop
 ...

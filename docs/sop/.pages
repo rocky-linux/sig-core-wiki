@@ -1,4 +1,5 @@
----                                                                                                                                                                                                                  nav:
+---
+nav:
   - ... | index.md
-  - Release Procedures | sop_release.md
+  - Release Procedures: sop_release.md
 ...

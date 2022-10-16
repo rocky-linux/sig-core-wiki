@@ -51,3 +51,16 @@
     **Technology**: Mailman 3 + Hyper Kitty
 
     **Contact**: `~Infrastructure` in Mattermost and `#rockylinux-infra` in Libera IRC
+
+=== "Contacts"
+
+    | Name                            | Email                   | Mattermost Name   | IRC Name           |
+    |---------------------------------|-------------------------|-------------------|--------------------|
+    | Louis Abel                      | label@rockylinux.org    | @nazunalika       | Sokel/label/Sombra |
+    | Mustafa Gezen                   | mustafa@rockylinux.org  | @mustafa          | mstg               |
+    | Skip Grube                      | skip@rockylinux.org     | @skip77           |                    |
+    | Sherif Nagy                     | sherif@rockylinux.org   | @sherif           |                    |
+    | Pablo Greco                     | pgreco@rockylinux.org   | @pgreco           | pgreco             |
+    | Neil Hanlon                     | neil@resf.org           | @neil             | neil               |
+    | Taylor Goodwill                 | tg@resf.org             | @tgo              | tg                 |
+

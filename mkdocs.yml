@@ -1,7 +1,7 @@
 ---
 # Wiki information
 site_name: SIG/Core Wiki
-site_url: https://core.sig.rocky.page
+site_url: https://sig-core.rocky.page
 site_description: >-
   The wiki for Rocky Linux Core SIG.
 
@@ -11,7 +11,19 @@ repo_name: sig_core/wiki
 edit_uri: edit/main/docs/
 
 theme:
-  name: cinder
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  logo: assets/icon-white.svg
   highlightjs: true
   hljs_languages:
     - bash
@@ -19,12 +31,12 @@ theme:
     - yaml
     - perl
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - navigation.top
     - search.highlight
     - search.suggest
     - toc.integrate
+    #- navigation.tabs
+    #- navigation.tabs.sticky
+    #- navigation.top
 markdown_extensions:
   - abbr
   - admonition

@@ -15,12 +15,12 @@ derivative or another project entirely.
 
 The tools in use for the distribution are in the table below.
 
-| Tool            | Maintainer        | Code Location                                                       |
-|-----------------|-------------------|---------------------------------------------------------------------|
-| srpmproc        | SIG/Core at Rocky | [GitHub](https://github.com/rocky-linux/srpmproc)                   |
-| empanadas       | SIG/Core at Rocky | [sig-core-toolkit](https://github.com/rocky-linux/sig-core-toolkit) |
-| Peridot         | SIG/Core at Rocky |                                                                     |
-| MirrorManager 2 | Fedora Project    | [MirrorManager2](https://github.com/fedora-infra/mirrormanager2)    |
+| Tool            | Maintainer       | Code Location                                                       |
+|-----------------|------------------|---------------------------------------------------------------------|
+| srpmproc        | SIG/Core at RESF | [GitHub](https://github.com/rocky-linux/srpmproc)                   |
+| empanadas       | SIG/Core at RESF | [sig-core-toolkit](https://github.com/rocky-linux/sig-core-toolkit) |
+| Peridot         | SIG/Core at RESF | [GitHub](https://github.com/rocky-linux/peridot)                    |
+| MirrorManager 2 | Fedora Project   | [MirrorManager2](https://github.com/fedora-infra/mirrormanager2)    |
 
 For Rocky Linux to be build, we use `Peridot` as the build system and
 `empanadas` to "compose" the distribution. As we do not use Koji for Rocky
@@ -36,12 +36,17 @@ Step by step, it looks like this:
 * Distribution is built and maintained in Peridot
 * Comps and pungi configuration is converted into the peridot format for the project
 * Repositories are created in yumrepofs based on the configuration provided
+* A repoclosure is ran against the repositories from empanadas to ensure there are no critical issues
 * In Parallel:
-  * Repositories are synced as a "full run" in empanadas
-  * Lorax is ran using empanadas in the peridot cluster
+
+    * Repositories are synced as a "full run" in empanadas
+    * Lorax is ran using empanadas in the peridot cluster
+
 * Lorax results are pulled down from an S3 bucket
 * DVD images are built for each architecture
 * Compose directory is synced to staging for verification
+* Staging is synced to production to allow mirror syncing
+* Bit flip on release day
 
 ## General Updates
 
