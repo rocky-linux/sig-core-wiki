@@ -1,7 +1,8 @@
 ---
 nav:
   - ... | index.md
-  - ... | about.md
+  - ... | members.md
+  - ... | what_we_do.md
   - Documentation: documentation
   - SOP: sop
 ...
