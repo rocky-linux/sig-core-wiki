@@ -3,4 +3,5 @@ nav:
   - ... | index.md
   - Composing Releases: compose.md
   - Empanadas: empanadas.md
+  - References: references
 ...

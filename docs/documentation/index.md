@@ -24,7 +24,7 @@ The tools in use for the distribution are in the table below.
 
 For Rocky Linux to be build, we use `Peridot` as the build system and
 `empanadas` to "compose" the distribution. As we do not use Koji for Rocky
-Linux beyond version 9, pungi no longer can be used. Peridot instead takes
+Linux beyond version 9, pungi can no longer be used. Peridot instead takes
 pungi configuration data and comps and transforms them into a format it
 can understand. Empanadas then comes in to do the "compose" and sync
 all the repositories down.
