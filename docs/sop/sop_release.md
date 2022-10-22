@@ -37,11 +37,20 @@ be queried to verify if mirrors are or appear to be in sync.
 
 ## Notes about Patch Days
 
+Within a minimum of one (1) to two (2) days, the following should be true:
+
+1. Updates should be completed in the build system, and verified in staging.
+
+2. Updates should be sent to production and file lists updated to allow mirrors
+to sync.
+
 ## Prior to Release Day notes
+
+Ensure the SIG/Core Checklist is read thoroughly and executed as listed.
 
 ## Release Day
 
-## Priorities
+### Priorities
 
 During release day, these should be verified/completed in order:
 
@@ -68,8 +77,63 @@ this should be documented.
 
 ### Beta
 
+* Compose Completed
+* Repoclosure must be checked and pass
+* Lorax Run
+* ISO's are built
+* Cloud Images built
+* Live Images built
+* Compose Synced to Staging
+* AWS/Azure Images in Marketplace
+* Vagrant Images
+* Container Images
+* Mirror Manager
+
+    * Ready to Migrate from previous beta release (rltype=beta)
+    * Boot image install migration from previous beta release
+
+* Pass image to Testing Team for final validation
+
 ### Release Candidate
 
+* Compose Completed
+* Repoclosure must be checked and pass
+* Lorax Run
+* ISO's are built
+* Cloud Images built
+* Live Images built
+* Compose Synced to Staging
+* AWS/Azure Images in Marketplace
+* Vagrant Images
+* Container Images
+* Mirror Manager
+
+    * Ready to Migrate from previous release
+    * Boot image install migration from previous release
+
+* Pass image to Testing Team for validation
+
 ### Final
+
+* Compose Completed
+* Repoclosure must be checked and pass
+* Lorax Run
+* ISO's are built
+* Cloud Images built
+* Live Images built
+* Compose Synced to Staging
+* AWS/Azure Images in Marketplace
+* Vagrant Images
+* Container Images
+* Mirror Manager
+
+    * Ready to Migrate from previous release
+    * Boot image install migration from previous release
+
+* Pass image to Testing Team for final validation
+* Sync to Production
+* Sync to Europe Mirror if applicable
+* Hardlink Run
+* Bitflip after 24-48 Hours
 
 {% include "resources_bottom.md" %}

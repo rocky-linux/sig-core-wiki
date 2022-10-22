@@ -2,7 +2,12 @@
 title: Empanadas common.py Configuration
 ---
 
+The `common.py` configuration contains dictionaries and classes that dictate
+most of the functionality of empanadas.
+
 ## Config Items
+
+type: Dictionary
 
 ### config.rlmacro
 
@@ -183,6 +188,13 @@ required: False
 
 description: URL of the S3-compatible bucket that is used to pull images from.
 
+## allowed_type_variants items
+
+type: Dictionary
+
+description: Key value pairs of cloud or image variants. The value is either
+`None` or a list type.
+
 ## Reference Example
 
 ```
@@ -211,5 +223,15 @@ config = {
     "aws_region": "us-east-2",
     "bucket": "resf-empanadas",
     "bucket_url": "https://resf-empanadas.s3.us-east-2.amazonaws.com"
+}
+
+ALLOWED_TYPE_VARIANTS = {
+        "Azure": None,
+        "Container": ["Base", "Minimal", "UBI"],
+        "EC2": None,
+        "GenericCloud": None,
+        "Vagrant": ["Libvirt", "Vbox"],
+        "OCP": None
+
 }
 ```
