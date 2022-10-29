@@ -75,4 +75,6 @@ downward to the stable branch. For example:
 
 This applies to any specific rocky repo, such as comps, pungi, peridot-config,
 and so on. As it is expected some repos will deviate in commit history, it is OK
-to force push.
+to force push, under the assumption that changes made in the lower branch exists
+in the upper branch. That way you can avoid changes/functionality being reverted
+on accident.
