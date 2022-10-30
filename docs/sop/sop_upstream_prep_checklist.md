@@ -78,3 +78,48 @@ and so on. As it is expected some repos will deviate in commit history, it is OK
 to force push, under the assumption that changes made in the lower branch exists
 in the upper branch. That way you can avoid changes/functionality being reverted
 on accident.
+
+## General Package Patching
+
+There are packages that are patched typically for the purpose of debranding.
+List of patched packages are typically maintained in a metadata repository. The
+obvious ones are listed below and should be monitored and maintained properly:
+
+* abrt
+* anaconda
+* anaconda-user-help
+* chrony
+* cockpit
+* dhcp
+* dnf
+* firefox
+* fwupd
+* gcc
+* gnome-session
+* gnome-settings-daemon
+* grub2
+* initial-setup
+* kernel
+* kernel-rt
+* libdnf
+* libreoffice
+* libreport
+* lorax-templates-rhel
+* nginx
+* opa-ff
+* opa-fm
+* openldap
+* openscap
+* osbuild
+* osbuild-composer
+* PackageKit
+* pesign
+* python-pip
+* redhat-rpm-config
+* scap-security-guide
+* shim
+* shim-unsigned-x64
+* shim-unsigned-aarch64
+* subscription-manager
+* systemd
+* thunderbird
