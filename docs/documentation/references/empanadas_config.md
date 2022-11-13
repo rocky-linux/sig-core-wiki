@@ -371,7 +371,11 @@ required: True
 
 description: Name of the cloud image being pulled.
 
-Accepted key value option `format`, which is `raw` or `qcow2`
+Accepted key value options:
+
+* `format`, which is `raw`, `qcow2`, `vhd`, `tar.xz`
+* `variants`, which is a list
+* `primary_variant`, which symlinks to the "primary" variant in the variant list
 
 #### repoclosure_map
 
