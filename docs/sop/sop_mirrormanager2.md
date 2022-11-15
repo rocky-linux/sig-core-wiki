@@ -57,6 +57,12 @@ If the backend of the CDN is down, it will attempt to guess what the user wanted
 Fastly -> www firewall -> mirrormanager server
 ```
 
+In reality, the flow is a lot more complex, and a diagram should be created to map it out in a more user-friendly manner (@TODO)
+
+```
+User -> Fastly -> AWS NLB over TLS, passthru -> www firewall cluster (decrypt TLS) -> mirrormanager server (Rocky CA TLS)
+```
+
 ## Tasks
 
 Below are a list of possible tasks to take with mirror manager, depending on the scenario.
