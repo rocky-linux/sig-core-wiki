@@ -1,0 +1,1518 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="The wiki for Rocky Linux Core SIG.">
+      
+      
+      
+        <link rel="canonical" href="https://sig-core.rocky.page/documentation/references/empanadas_config/">
+      
+      
+        <link rel="prev" href="../empanadas_common/">
+      
+      
+        <link rel="next" href="../empanadas_sig_config/">
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
+    
+    
+      
+        <title>Empanadas config yaml Configuration - SIG/Core Wiki</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.7a7fce14.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a0c5b2b5.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent="">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#config-items" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="SIG/Core Wiki" class="md-header__button md-logo" aria-label="SIG/Core Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/icon-white.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SIG/Core Wiki
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Empanadas config yaml Configuration
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://git.resf.org/sig_core/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sig_core/wiki
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="SIG/Core Wiki" class="md-nav__button md-logo" aria-label="SIG/Core Wiki" data-md-component="logo">
+      
+  <img src="../../../assets/icon-white.svg" alt="logo">
+
+    </a>
+    SIG/Core Wiki
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://git.resf.org/sig_core/wiki" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sig_core/wiki
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        SIG/Core
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../members/" class="md-nav__link">
+        Members
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../what_we_do/" class="md-nav__link">
+        What We Do
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          Documentation
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Documentation
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        Composing Releases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          Composing Releases
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4_2">
+          <span class="md-nav__icon md-icon"></span>
+          Composing Releases
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../compose/" class="md-nav__link">
+        Composing Releases
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../empanadas/" class="md-nav__link">
+        Empanadas
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../peridot/" class="md-nav__link">
+        Peridot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          References
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_4_5">
+          <span class="md-nav__icon md-icon"></span>
+          References
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        References
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empanadas_common/" class="md-nav__link">
+        Empanadas common.py Configuration
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Empanadas config yaml Configuration
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Empanadas config yaml Configuration
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#top-level" class="md-nav__link">
+    Top Level
+  </a>
+  
+    <nav class="md-nav" aria-label="Top Level">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fullname" class="md-nav__link">
+    fullname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revision" class="md-nav__link">
+    revision
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rclvl" class="md-nav__link">
+    rclvl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#major" class="md-nav__link">
+    major
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#minor" class="md-nav__link">
+    minor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    profile
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#disttag" class="md-nav__link">
+    disttag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bugurl" class="md-nav__link">
+    bugurl
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checksum" class="md-nav__link">
+    checksum
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fedora_major" class="md-nav__link">
+    fedora_major
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#allowed_arches" class="md-nav__link">
+    allowed_arches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#provide_multilib" class="md-nav__link">
+    provide_multilib
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project_id" class="md-nav__link">
+    project_id
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repo_symlinks" class="md-nav__link">
+    repo_symlinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#renames" class="md-nav__link">
+    renames
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#all_repos" class="md-nav__link">
+    all_repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#structure" class="md-nav__link">
+    structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iso_map" class="md-nav__link">
+    iso_map
+  </a>
+  
+    <nav class="md-nav" aria-label="iso_map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#xorrisofs" class="md-nav__link">
+    xorrisofs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iso_level" class="md-nav__link">
+    iso_level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    images
+  </a>
+  
+    <nav class="md-nav" aria-label="images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#namedisc" class="md-nav__link">
+    name.disc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nameisoskip" class="md-nav__link">
+    name.isoskip
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namevariant" class="md-nav__link">
+    name.variant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namerepos" class="md-nav__link">
+    name.repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#namevolname" class="md-nav__link">
+    name.volname
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lorax" class="md-nav__link">
+    lorax
+  </a>
+  
+    <nav class="md-nav" aria-label="lorax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#loraxrepos" class="md-nav__link">
+    lorax.repos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loraxvariant" class="md-nav__link">
+    lorax.variant
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loraxlorax_removes" class="md-nav__link">
+    lorax.lorax_removes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loraxrequired_pkgs" class="md-nav__link">
+    lorax.required_pkgs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livemap" class="md-nav__link">
+    livemap
+  </a>
+  
+    <nav class="md-nav" aria-label="livemap">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#livemapgit_repo" class="md-nav__link">
+    livemap.git_repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livemapbranch" class="md-nav__link">
+    livemap.branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livemapksentry" class="md-nav__link">
+    livemap.ksentry
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livemapallowed_arches" class="md-nav__link">
+    livemap.allowed_arches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#livemaprequired_pkgs" class="md-nav__link">
+    livemap.required_pkgs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloudimages" class="md-nav__link">
+    cloudimages
+  </a>
+  
+    <nav class="md-nav" aria-label="cloudimages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudimagesimages" class="md-nav__link">
+    cloudimages.images
+  </a>
+  
+    <nav class="md-nav" aria-label="cloudimages.images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cloudimagesimagesname" class="md-nav__link">
+    cloudimages.images.name
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repoclosure_map" class="md-nav__link">
+    repoclosure_map
+  </a>
+  
+    <nav class="md-nav" aria-label="repoclosure_map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#repoclosure_maparches" class="md-nav__link">
+    repoclosure_map.arches
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repoclosure_maprepos" class="md-nav__link">
+    repoclosure_map.repos
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra_files" class="md-nav__link">
+    extra_files
+  </a>
+  
+    <nav class="md-nav" aria-label="extra_files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extra_filesgit_repo" class="md-nav__link">
+    extra_files.git_repo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra_filesgit_raw_path" class="md-nav__link">
+    extra_files.git_raw_path
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra_filesbranch" class="md-nav__link">
+    extra_files.branch
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra_filesgpg" class="md-nav__link">
+    extra_files.gpg
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra_fileslist" class="md-nav__link">
+    extra_files.list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../empanadas_sig_config/" class="md-nav__link">
+        Empanadas SIG yaml Configuration
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          SOP
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          SOP
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sop/" class="md-nav__link">
+        SOP (Standard Operationg Procedures)
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sop/sop_release/" class="md-nav__link">
+        Release Procedures
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
+        Generalized Prep Checklist for Upcoming Releases
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../sop/sop_mirrormanager2/" class="md-nav__link">
+        Mirror Manager
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<p>Each file in <code>empanads/config/</code> is a yaml file that contains configuration
+items for the distribution release version. The configuration can heavily
+dictate the functionality and what features are directly supported by empanadas
+when ran.</p>
+<p>See the items below to see which options are mandatory and optional.</p>
+<h1 id="config-items">Config Items<a class="headerlink" href="#config-items" title="Permanent link">&para;</a></h1>
+<h2 id="top-level">Top Level<a class="headerlink" href="#top-level" title="Permanent link">&para;</a></h2>
+<p>The Top Level is the name of the profile and starts the YAML dictionary for the
+release.  It is alphanumeric and accepts punctuation within reason. Common
+examples:</p>
+<ul>
+<li><code>9</code></li>
+<li><code>9-beta</code></li>
+<li><code>8-lookahead</code></li>
+</ul>
+<h3 id="fullname">fullname<a class="headerlink" href="#fullname" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Needed for treeinfo and discinfo generation.</p>
+<h3 id="revision">revision<a class="headerlink" href="#revision" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Full version of a release</p>
+<h3 id="rclvl">rclvl<a class="headerlink" href="#rclvl" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Release Candidate or Beta descriptor. Sets names and versions with
+this descriptor if enabled.</p>
+<h3 id="major">major<a class="headerlink" href="#major" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Major version of a release</p>
+<h3 id="minor">minor<a class="headerlink" href="#minor" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Minor version of a release</p>
+<h3 id="profile">profile<a class="headerlink" href="#profile" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Matches the top level of the release. This should not differ from
+the top level assignment.</p>
+<h3 id="disttag">disttag<a class="headerlink" href="#disttag" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Sets the dist tag for mock configs.</p>
+<h3 id="bugurl">bugurl<a class="headerlink" href="#bugurl" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: A URL to the bug tracker for this release or distribution.</p>
+<h3 id="checksum">checksum<a class="headerlink" href="#checksum" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Checksum type. Used when generating checksum information for
+images.</p>
+<h3 id="fedora_major">fedora_major<a class="headerlink" href="#fedora_major" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: False</p>
+<p>description: For future use with icicle.</p>
+<h3 id="allowed_arches">allowed_arches<a class="headerlink" href="#allowed_arches" title="Permanent link">&para;</a></h3>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: List of supported architectures for this release.</p>
+<h3 id="provide_multilib">provide_multilib<a class="headerlink" href="#provide_multilib" title="Permanent link">&para;</a></h3>
+<p>type: boolean</p>
+<p>required: True</p>
+<p>description: Sets if architecture x86_64 will be multilib. It is recommended
+that this is set to <code>True</code>.</p>
+<h3 id="project_id">project_id<a class="headerlink" href="#project_id" title="Permanent link">&para;</a></h3>
+<p>type: String</p>
+<p>required: True</p>
+<p>description: Appended to the base repo URL in common.py. For peridot, it is the
+project id that is generated for the project you are pulling from. It can be set
+to anything else if need be for non-peridot use.</p>
+<h3 id="repo_symlinks">repo_symlinks<a class="headerlink" href="#repo_symlinks" title="Permanent link">&para;</a></h3>
+<p>type: dict</p>
+<p>required: False</p>
+<p>description: For future use. Sets symlinks to repositories for backwards
+compatibility. Key value pairs only.</p>
+<h3 id="renames">renames<a class="headerlink" href="#renames" title="Permanent link">&para;</a></h3>
+<p>type: dict</p>
+<p>required: False</p>
+<p>description: Renames a repository to the value set. For example, renaming <code>all</code>
+to <code>devel</code>. Set to <code>{}</code> if no renames are goign to occur.</p>
+<h3 id="all_repos">all_repos<a class="headerlink" href="#all_repos" title="Permanent link">&para;</a></h3>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: List of repositories that will be synced/managed by empanadas.</p>
+<h3 id="structure">structure<a class="headerlink" href="#structure" title="Permanent link">&para;</a></h3>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Key value pairs of <code>packages</code> and <code>repodata</code>. These are appended
+appropriately during syncing and ISO actions. Setting these are mandatory.</p>
+<h3 id="iso_map">iso_map<a class="headerlink" href="#iso_map" title="Permanent link">&para;</a></h3>
+<p>type: dictionary</p>
+<p>required: True if building ISO's and operating with lorax.</p>
+<p>description: Controls how lorax and extra ISO's are built.</p>
+<p>If are you not building images, set to <code>{}</code></p>
+<h4 id="xorrisofs">xorrisofs<a class="headerlink" href="#xorrisofs" title="Permanent link">&para;</a></h4>
+<p>type: boolean</p>
+<p>required: True</p>
+<p>description: Dictates of xorrisofs is used to build images. Setting to false
+uses genisoimage. It is recommended that xorrisofs is used.</p>
+<h4 id="iso_level">iso_level<a class="headerlink" href="#iso_level" title="Permanent link">&para;</a></h4>
+<p>type: boolean</p>
+<p>required: True</p>
+<p>description: Set to false if you are using xorrisofs. Can be set to true when
+using genisoimage.</p>
+<h4 id="images">images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Dictates the ISO images that will be made or the treeinfo that will
+be generated.</p>
+<p><strong>Note</strong>: The primary repository (for example, BaseOS) will need to be listed to
+ensure the treeinfo data is correctly generated. <code>disc</code> should be set to <code>False</code>
+and <code>isoskip</code> should be set to <code>True</code>. See the example section for an example.</p>
+<h5 id="namedisc">name.disc<a class="headerlink" href="#namedisc" title="Permanent link">&para;</a></h5>
+<p>type: boolean</p>
+<p>required: True</p>
+<p>description: This tells the iso builder if this will be a generated ISO.</p>
+<h5 id="nameisoskip">name.isoskip<a class="headerlink" href="#nameisoskip" title="Permanent link">&para;</a></h5>
+<p>type: boolean</p>
+<p>required: False</p>
+<p>description: This tells the iso builder if this will be skipped, even if <code>disc</code>
+is set to <code>True</code>. Default is <code>False</code>.</p>
+<h5 id="namevariant">name.variant<a class="headerlink" href="#namevariant" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: Names the primary variant repository for the image. This is set in
+.treeinfo.</p>
+<h5 id="namerepos">name.repos<a class="headerlink" href="#namerepos" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: Names of the repositories included in the image. This is added to
+.treeinfo.</p>
+<h5 id="namevolname">name.volname<a class="headerlink" href="#namevolname" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>required value: <code>dvd</code></p>
+<p>description: This is required if building more than the DVD image. By default,
+the the name <code>dvd</code> is harcoded in the buildImage template.</p>
+<h4 id="lorax">lorax<a class="headerlink" href="#lorax" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: True if building lorax images.</p>
+<p>description: Sets up lorax images and which repositories to use when building
+lorax images.</p>
+<h5 id="loraxrepos">lorax.repos<a class="headerlink" href="#loraxrepos" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: List of repos that are used to pull packages to build the lorax
+images.</p>
+<h5 id="loraxvariant">lorax.variant<a class="headerlink" href="#loraxvariant" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: Base repository for the release</p>
+<h5 id="loraxlorax_removes">lorax.lorax_removes<a class="headerlink" href="#loraxlorax_removes" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: False</p>
+<p>description: Excludes packages that are not needed when lorax is running.</p>
+<h5 id="loraxrequired_pkgs">lorax.required_pkgs<a class="headerlink" href="#loraxrequired_pkgs" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: Required list of installed packages needed to build lorax images.</p>
+<h4 id="livemap">livemap<a class="headerlink" href="#livemap" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: False</p>
+<p>description: Dictates what live images are built and how they are built.</p>
+<h5 id="livemapgit_repo">livemap.git_repo<a class="headerlink" href="#livemapgit_repo" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: The git repository URL where the kickstarts live</p>
+<h5 id="livemapbranch">livemap.branch<a class="headerlink" href="#livemapbranch" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: The branch being used for the kickstarts</p>
+<h5 id="livemapksentry">livemap.ksentry<a class="headerlink" href="#livemapksentry" title="Permanent link">&para;</a></h5>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Key value pairs of the live images being created. Key being the
+name of the live image, value being the kickstart name/path.</p>
+<h5 id="livemapallowed_arches">livemap.allowed_arches<a class="headerlink" href="#livemapallowed_arches" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: List of allowed architectures that will build for the live images.</p>
+<h5 id="livemaprequired_pkgs">livemap.required_pkgs<a class="headerlink" href="#livemaprequired_pkgs" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: Required list of packages needed to build the live images.</p>
+<h4 id="cloudimages">cloudimages<a class="headerlink" href="#cloudimages" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: False</p>
+<p>description: Cloud related settings.</p>
+<p>Set to <code>{}</code> if not needed.</p>
+<h5 id="cloudimagesimages">cloudimages.images<a class="headerlink" href="#cloudimagesimages" title="Permanent link">&para;</a></h5>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Cloud images that will be generated and in a bucket to be pulled,
+and their format.</p>
+<h6 id="cloudimagesimagesname">cloudimages.images.name<a class="headerlink" href="#cloudimagesimagesname" title="Permanent link">&para;</a></h6>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Name of the cloud image being pulled.</p>
+<p>Accepted key value options:</p>
+<ul>
+<li><code>format</code>, which is <code>raw</code>, <code>qcow2</code>, <code>vhd</code>, <code>tar.xz</code></li>
+<li><code>variants</code>, which is a list</li>
+<li><code>primary_variant</code>, which symlinks to the "primary" variant in the variant list</li>
+</ul>
+<h4 id="repoclosure_map">repoclosure_map<a class="headerlink" href="#repoclosure_map" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Repoclosure settings. These settings are absolutely required when
+doing full syncs and need to check repositories for consistency.</p>
+<h5 id="repoclosure_maparches">repoclosure_map.arches<a class="headerlink" href="#repoclosure_maparches" title="Permanent link">&para;</a></h5>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: For each architecture (key), dnf switches/settings that dictate how
+repoclosure will check for consistency (value, string).</p>
+<p>example: <code>x86_64: '--forcearch=x86_64 --arch=x86_64 --arch=athlon --arch=i686 --arch=i586 --arch=i486 --arch=i386 --arch=noarch'</code></p>
+<h5 id="repoclosure_maprepos">repoclosure_map.repos<a class="headerlink" href="#repoclosure_maprepos" title="Permanent link">&para;</a></h5>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: For each repository that is pulled for a given release(key),
+repositories that will be included in the repoclosure check. A repository that
+only checks against itself must have a value of <code>[]</code>.</p>
+<h4 id="extra_files">extra_files<a class="headerlink" href="#extra_files" title="Permanent link">&para;</a></h4>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: Extra files settings and where they come from. Git repositories are
+the only supported method.</p>
+<h5 id="extra_filesgit_repo">extra_files.git_repo<a class="headerlink" href="#extra_filesgit_repo" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: URL to the git repository with the extra files.</p>
+<h5 id="extra_filesgit_raw_path">extra_files.git_raw_path<a class="headerlink" href="#extra_filesgit_raw_path" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: URL to the git repository with the extra files, but the "raw" url
+form.</p>
+<p>example: <code>git_raw_path: 'https://git.rockylinux.org/staging/src/rocky-release/-/raw/r9/'</code></p>
+<h5 id="extra_filesbranch">extra_files.branch<a class="headerlink" href="#extra_filesbranch" title="Permanent link">&para;</a></h5>
+<p>type: string</p>
+<p>required: True</p>
+<p>description: Branch where the extra files are pulled from.</p>
+<h5 id="extra_filesgpg">extra_files.gpg<a class="headerlink" href="#extra_filesgpg" title="Permanent link">&para;</a></h5>
+<p>type: dict</p>
+<p>required: True</p>
+<p>description: For each gpg key type (key), the relative path to the key in the
+git repository (value).</p>
+<p>These keys help set up the repository configuration when doing syncs.</p>
+<p>By default, the RepoSync class sets <code>stable</code> as the gpgkey that is used.</p>
+<h5 id="extra_fileslist">extra_files.list<a class="headerlink" href="#extra_fileslist" title="Permanent link">&para;</a></h5>
+<p>type: list</p>
+<p>required: True</p>
+<p>description: List of files from the git repository that will be used as "extra"
+files and placed in the repositories and available to mirrors and will appear on
+ISO images if applicable.</p>
+<h1 id="reference-example">Reference Example<a class="headerlink" href="#reference-example" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>---
+&#39;9&#39;:
+  fullname: &#39;Rocky Linux 9.0&#39;
+  revision: &#39;9.0&#39;
+  rclvl: &#39;RC2&#39;
+  major: &#39;9&#39;
+  minor: &#39;0&#39;
+  profile: &#39;9&#39;
+  disttag: &#39;el9&#39;
+  bugurl: &#39;https://bugs.rockylinux.org&#39;
+  checksum: &#39;sha256&#39;
+  fedora_major: &#39;20&#39;
+  allowed_arches:
+    - x86_64
+    - aarch64
+    - ppc64le
+    - s390x
+  provide_multilib: True
+  project_id: &#39;55b17281-bc54-4929-8aca-a8a11d628738&#39;
+  repo_symlinks:
+    NFV: &#39;nfv&#39;
+  renames:
+    all: &#39;devel&#39;
+  all_repos:
+    - &#39;all&#39;
+    - &#39;BaseOS&#39;
+    - &#39;AppStream&#39;
+    - &#39;CRB&#39;
+    - &#39;HighAvailability&#39;
+    - &#39;ResilientStorage&#39;
+    - &#39;RT&#39;
+    - &#39;NFV&#39;
+    - &#39;SAP&#39;
+    - &#39;SAPHANA&#39;
+    - &#39;extras&#39;
+    - &#39;plus&#39;
+  structure:
+    packages: &#39;os/Packages&#39;
+    repodata: &#39;os/repodata&#39;
+  iso_map:
+    xorrisofs: True
+    iso_level: False
+    images:
+      dvd:
+        disc: True
+        variant: &#39;AppStream&#39;
+        repos:
+          - &#39;BaseOS&#39;
+          - &#39;AppStream&#39;
+      minimal:
+        disc: True
+        isoskip: True
+        repos:
+          - &#39;minimal&#39;
+          - &#39;BaseOS&#39;
+        variant: &#39;minimal&#39;
+        volname: &#39;dvd&#39;
+      BaseOS:
+        disc: False
+        isoskip: True
+        variant: &#39;BaseOS&#39;
+        repos:
+          - &#39;BaseOS&#39;
+          - &#39;AppStream&#39;
+    lorax:
+      repos:
+        - &#39;BaseOS&#39;
+        - &#39;AppStream&#39;
+      variant: &#39;BaseOS&#39;
+      lorax_removes:
+        - &#39;libreport-rhel-anaconda-bugzilla&#39;
+      required_pkgs:
+        - &#39;lorax&#39;
+        - &#39;genisoimage&#39;
+        - &#39;isomd5sum&#39;
+        - &#39;lorax-templates-rhel&#39;
+        - &#39;lorax-templates-generic&#39;
+        - &#39;xorriso&#39;
+  cloudimages:
+    images:
+      EC2:
+        format: raw
+      GenericCloud:
+        format: qcow2
+  livemap:
+    git_repo: &#39;https://git.resf.org/sig_core/kickstarts.git&#39;
+    branch: &#39;r9&#39;
+    ksentry:
+      Workstation: rocky-live-workstation.ks
+      Workstation-Lite: rocky-live-workstation-lite.ks
+      XFCE: rocky-live-xfce.ks
+      KDE: rocky-live-kde.ks
+      MATE: rocky-live-mate.ks
+    allowed_arches:
+      - x86_64
+      - aarch64
+    required_pkgs:
+      - &#39;lorax-lmc-novirt&#39;
+      - &#39;vim-minimal&#39;
+      - &#39;pykickstart&#39;
+      - &#39;git&#39;
+  variantmap:
+    git_repo: &#39;https://git.rockylinux.org/rocky/pungi-rocky.git&#39;
+    branch: &#39;r9&#39;
+    git_raw_path: &#39;https://git.rockylinux.org/rocky/pungi-rocky/-/raw/r9/&#39;
+  repoclosure_map:
+    arches:
+      x86_64: &#39;--forcearch=x86_64 --arch=x86_64 --arch=athlon --arch=i686 --arch=i586 --arch=i486 --arch=i386 --arch=noarch&#39;
+      aarch64: &#39;--forcearch=aarch64 --arch=aarch64 --arch=noarch&#39;
+      ppc64le: &#39;--forcearch=ppc64le --arch=ppc64le --arch=noarch&#39;
+      s390x: &#39;--forcearch=s390x --arch=s390x --arch=noarch&#39;
+    repos:
+      devel: []
+      BaseOS: []
+      AppStream:
+        - BaseOS
+      CRB:
+        - BaseOS
+        - AppStream
+      HighAvailability:
+        - BaseOS
+        - AppStream
+      ResilientStorage:
+        - BaseOS
+        - AppStream
+      RT:
+        - BaseOS
+        - AppStream
+      NFV:
+        - BaseOS
+        - AppStream
+      SAP:
+        - BaseOS
+        - AppStream
+        - HighAvailability
+      SAPHANA:
+        - BaseOS
+        - AppStream
+        - HighAvailability
+  extra_files:
+    git_repo: &#39;https://git.rockylinux.org/staging/src/rocky-release.git&#39;
+    git_raw_path: &#39;https://git.rockylinux.org/staging/src/rocky-release/-/raw/r9/&#39;
+    branch: &#39;r9&#39;
+    gpg:
+      stable: &#39;SOURCES/RPM-GPG-KEY-Rocky-9&#39;
+      testing: &#39;SOURCES/RPM-GPG-KEY-Rocky-9-Testing&#39;
+    list:
+      - &#39;SOURCES/Contributors&#39;
+      - &#39;SOURCES/COMMUNITY-CHARTER&#39;
+      - &#39;SOURCES/EULA&#39;
+      - &#39;SOURCES/LICENSE&#39;
+      - &#39;SOURCES/RPM-GPG-KEY-Rocky-9&#39;
+      - &#39;SOURCES/RPM-GPG-KEY-Rocky-9-Testing&#39;
+...
+</code></pre></div>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2022-11-12
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 Rocky Enterprise Software Foundation
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.407015b8.min.js"></script>
+      
+    
+  </body>
+</html>
