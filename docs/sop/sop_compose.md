@@ -81,7 +81,7 @@ poetry run finalize_compose --release X
 
 Syncing utilizes the sync scripts provided in the release engineering toolkit.
 
-When the scripts are being ran, they are usually ran with a specific purpose or a reason. As such, the correct scripts should be ran.
+When the scripts are being ran, they are usually ran with a specific purpose, as each major version may be different.
 
 The below are common vars files. common_X will override what's in common. Typically these set what repositories exist and how they are named or look at the top level. These also set the current major.minor release as necessary.
 
@@ -108,7 +108,7 @@ These are for the releases in general. What they do is noted below.
 ├── sync-to-staging-sig.sh           -> Syncs a sig provided compose to staging
 ```
 
-Generally, you will only run `sync-to-staging.sh` or `sync-to-staging.delete.sh` to sync. The former is for older releases, the latter is for newer releases.
+Generally, you will only run `sync-to-staging.sh` or `sync-to-staging.delete.sh` to sync. The former is for older releases, the latter is for newer releases. Optionally, if you are syncing a "beta" or "lookahead" release, you will need to also provide the `RLREL` variable as `beta` or `lookahead`.
 
 ```
 # The below syncs to staging for Rocky Linux 8
