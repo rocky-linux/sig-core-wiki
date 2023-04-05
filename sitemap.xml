@@ -41,6 +41,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sig-core.rocky.page/documentation/compose/koji/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sig-core.rocky.page/documentation/references/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>
@@ -77,6 +82,11 @@
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_compose_8/</loc>
+         <lastmod>2023-04-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/sop/sop_compose_sig/</loc>
          <lastmod>2023-04-05</lastmod>
          <changefreq>daily</changefreq>
     </url>

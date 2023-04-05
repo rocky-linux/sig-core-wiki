@@ -16,7 +16,7 @@
         <link rel="prev" href="../sop_compose_8/">
       
       
-        <link rel="next" href="../sop_upstream_prep_checklist/">
+        <link rel="next" href="../sop_compose_sig/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
@@ -363,6 +363,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../documentation/compose/koji/" class="md-nav__link">
+        Manual Updates in Koji
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -672,6 +686,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../sop_compose_sig/" class="md-nav__link">
+        Compose and Repo Sync for Rocky Linux Special Interest Groups
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../sop_upstream_prep_checklist/" class="md-nav__link">
         Generalized Prep Checklist for Upcoming Releases
       </a>
@@ -805,7 +833,7 @@ poetry run finalize_compose --release X
 </code></pre></div>
 <h2 id="syncing-composes">Syncing Composes<a class="headerlink" href="#syncing-composes" title="Permanent link">&para;</a></h2>
 <p>Syncing utilizes the sync scripts provided in the release engineering toolkit.</p>
-<p>When the scripts are being ran, they are usually ran with a specific purpose or a reason. As such, the correct scripts should be ran.</p>
+<p>When the scripts are being ran, they are usually ran with a specific purpose, as each major version may be different.</p>
 <p>The below are common vars files. common_X will override what's in common. Typically these set what repositories exist and how they are named or look at the top level. These also set the current major.minor release as necessary.</p>
 <div class="highlight"><pre><span></span><code>.
 ├── common
@@ -825,7 +853,7 @@ poetry run finalize_compose --release X
 ├── sync-to-staging.delete.sh        -&gt; Syncs a provided compose to staging (deletes artifacts that are no longer in the compose)
 ├── sync-to-staging-sig.sh           -&gt; Syncs a sig provided compose to staging
 </code></pre></div>
-<p>Generally, you will only run <code>sync-to-staging.sh</code> or <code>sync-to-staging.delete.sh</code> to sync. The former is for older releases, the latter is for newer releases.</p>
+<p>Generally, you will only run <code>sync-to-staging.sh</code> or <code>sync-to-staging.delete.sh</code> to sync. The former is for older releases, the latter is for newer releases. Optionally, if you are syncing a "beta" or "lookahead" release, you will need to also provide the <code>RLREL</code> variable as <code>beta</code> or <code>lookahead</code>.</p>
 <div class="highlight"><pre><span></span><code># The below syncs to staging for Rocky Linux 8
 RLVER=8 bash sync-to-staging.sh Rocky
 # The below syncs to staging for Rocky Linux 9
@@ -844,7 +872,7 @@ bash sync-file-list-parallel.sh
   <small>
     
       Last update:
-      2023-04-04
+      2023-04-05
     
   </small>
 </div>
