@@ -2,6 +2,8 @@
 nav:
   - ... | index.md
   - Release Procedures: sop_release.md
+  - Compose and Repo Sync for Rocky Linux 8: sop_compose_8.md
+  - Compose and Repo Sync for Rocky Linux and Peridot: sop_compose.md
   - Generalized Prep Checklist for Upcoming Releases: sop_upstream_prep_checklist.md
   - Mirror Manager: sop_mirrormanager2.md
 ...
