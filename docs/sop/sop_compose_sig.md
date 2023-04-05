@@ -49,7 +49,7 @@ Syncing utilizes the sync scripts provided in the release engineering toolkit.
 
 When the scripts are being ran, they are usually ran with a specific purpose, as each major version may be different.
 
-For SIG's, the only files you'll need to know of are `sync-to-staging-sig.sh` and `sync-to-prod-sig.sh`. The former syncs a specific sig over to staging. As of this writing, the latter syncs everything in staging to production. **Both scripts will delete packages and data that are no longer in the compose.**
+For SIG's, the only files you'll need to know of are `sync-to-staging-sig.sh` and `sync-to-prod-sig.sh`. **Both scripts will delete packages and data that are no longer in the compose.**
 
 ```
 # The below syncs the core 8 repos to staging
@@ -57,11 +57,11 @@ RLVER=8 bash sync-to-staging-sig.sh core
 # The below syncs the core 9 repos to staging
 RLVER=9 bash sync-to-staging-sig.sh core
 
-# The below syncs everything in staging for 8 to prod
-RLVER=8 bash sync-to-prod-sig.sh
+# The below syncs everything in staging for 8 core to prod
+RLVER=8 bash sync-to-prod-sig.sh core
 
-# The below syncs everything in staging for 9 to prod
-RLVER=9 bash sync-to-prod-sig.sh
+# The below syncs everything in staging for 9 core to prod
+RLVER=9 bash sync-to-prod-sig.sh core
 ```
 
 Once staging is completed and reviewed, it is synced to production.
