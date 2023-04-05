@@ -10,20 +10,20 @@
       
       
       
-        <link rel="canonical" href="https://sig-core.rocky.page/documentation/compose/">
+        <link rel="canonical" href="https://sig-core.rocky.page/sop/sop_compose/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../sop_compose_8/">
       
       
-        <link rel="next" href="../empanadas/">
+        <link rel="next" href="../sop_upstream_prep_checklist/">
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.5">
     
     
       
-        <title>Composing Releases - SIG/Core Wiki</title>
+        <title>SOP: Compose and Repo Sync for Rocky Linux and Peridot - SIG/Core Wiki</title>
       
     
     
@@ -74,6 +74,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#contact-information" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -104,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Composing Releases
+              SOP: Compose and Repo Sync for Rocky Linux and Peridot
             
           </span>
         </div>
@@ -280,16 +285,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
       
       
       
@@ -298,7 +301,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4">
           <span class="md-nav__icon md-icon"></span>
           Documentation
@@ -311,7 +314,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../documentation/" class="md-nav__link">
         Composing Releases
       </a>
     </li>
@@ -323,16 +326,14 @@
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
       
       
       
@@ -341,7 +342,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_4_2">
           <span class="md-nav__icon md-icon"></span>
           Composing Releases
@@ -352,19 +353,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../documentation/compose/" class="md-nav__link">
         Composing Releases
       </a>
-      
     </li>
   
 
@@ -383,7 +376,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../empanadas/" class="md-nav__link">
+      <a href="../../documentation/empanadas/" class="md-nav__link">
         Empanadas
       </a>
     </li>
@@ -397,7 +390,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../peridot/" class="md-nav__link">
+      <a href="../../documentation/peridot/" class="md-nav__link">
         Peridot
       </a>
     </li>
@@ -438,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/" class="md-nav__link">
+      <a href="../../documentation/references/" class="md-nav__link">
         References
       </a>
     </li>
@@ -452,7 +445,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/empanadas_common/" class="md-nav__link">
+      <a href="../../documentation/references/empanadas_common/" class="md-nav__link">
         Empanadas common.py Configuration
       </a>
     </li>
@@ -466,7 +459,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/empanadas_config/" class="md-nav__link">
+      <a href="../../documentation/references/empanadas_config/" class="md-nav__link">
         Empanadas config yaml Configuration
       </a>
     </li>
@@ -480,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../references/empanadas_sig_config/" class="md-nav__link">
+      <a href="../../documentation/references/empanadas_sig_config/" class="md-nav__link">
         Empanadas SIG yaml Configuration
       </a>
     </li>
@@ -507,14 +500,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
       
       
       
@@ -523,7 +518,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_5">
           <span class="md-nav__icon md-icon"></span>
           SOP
@@ -536,7 +531,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         SOP (Standard Operationg Procedures)
       </a>
     </li>
@@ -550,7 +545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_release/" class="md-nav__link">
+      <a href="../sop_release/" class="md-nav__link">
         Release Procedures
       </a>
     </li>
@@ -564,7 +559,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_8/" class="md-nav__link">
+      <a href="../sop_compose_8/" class="md-nav__link">
         Compose and Repo Sync for Rocky Linux 8
       </a>
     </li>
@@ -576,11 +571,96 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../sop/sop_compose/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Compose and Repo Sync for Rocky Linux and Peridot
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Compose and Repo Sync for Rocky Linux and Peridot
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contact-information" class="md-nav__link">
+    Contact Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-git-repositories" class="md-nav__link">
+    Related Git Repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#composing-repositories" class="md-nav__link">
+    Composing Repositories
+  </a>
+  
+    <nav class="md-nav" aria-label="Composing Repositories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mount-structure" class="md-nav__link">
+    Mount Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#empanadas" class="md-nav__link">
+    Empanadas
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-compose" class="md-nav__link">
+    Running a Compose
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syncing-composes" class="md-nav__link">
+    Syncing Composes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -592,7 +672,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
+      <a href="../sop_upstream_prep_checklist/" class="md-nav__link">
         Generalized Prep Checklist for Upcoming Releases
       </a>
     </li>
@@ -606,7 +686,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_mirrormanager2/" class="md-nav__link">
+      <a href="../sop_mirrormanager2/" class="md-nav__link">
         Mirror Manager
       </a>
     </li>
@@ -638,16 +718,133 @@
   
 
 
-  <h1>Composing Releases</h1>
+  <h1>Compose and Repo Sync for Rocky Linux and Peridot</h1>
 
-<p>This section goes over the process of composing a release.</p>
+<p>This SOP covers how the Rocky Linux Release Engineering Team handles composes and repository syncs for the distribution. It contains information of the scripts that are utilized and in what order, depending on the use case.</p>
+<h2 id="contact-information">Contact Information<a class="headerlink" href="#contact-information" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Owner</strong></td>
+<td>Release Engineering Team</td>
+</tr>
+<tr>
+<td><strong>Email Contact</strong></td>
+<td>releng@rockylinux.org</td>
+</tr>
+<tr>
+<td><strong>Email Contact</strong></td>
+<td>infrastructure@rockylinux.org</td>
+</tr>
+<tr>
+<td><strong>Mattermost Contacts</strong></td>
+<td><code>@label</code> <code>@mustafa</code> <code>@neil</code> <code>@tgo</code></td>
+</tr>
+<tr>
+<td><strong>Mattermost Channels</strong></td>
+<td><code>~Development</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="related-git-repositories">Related Git Repositories<a class="headerlink" href="#related-git-repositories" title="Permanent link">&para;</a></h2>
+<p>There are several git repositories used in the overall composition of a repository or a set of repositories.</p>
+<p><a href="https://git.rockylinux.org/rocky/pungi-rocky">Pungi</a> - This repository contains all the necessary pungi configuration files that peridot translates into its own configuration. Pungi is no longer used for Rocky Linux.</p>
+<p><a href="https://git.rockylinux.org/rocky/comps">Comps</a> - This repository contains all the necessary comps (which are groups and other data) for a given major version. Peridot (and pungi) use this information to properly build repositories.</p>
+<p><a href="https://github.com/rocky-linux/sig-core-toolkit">Toolkit</a> - This repository contains various scripts and utilities used by Release Engineering, such as syncing composes, functionality testing, and mirror maintenance.</p>
+<h2 id="composing-repositories">Composing Repositories<a class="headerlink" href="#composing-repositories" title="Permanent link">&para;</a></h2>
+<h3 id="mount-structure">Mount Structure<a class="headerlink" href="#mount-structure" title="Permanent link">&para;</a></h3>
+<p>There is a designated system that takes care of composing repositories. These systems contain the necessary EFS/NFS mounts for the staging and production repositories as well as composes.</p>
+<ul>
+<li><code>/mnt/compose</code> -&gt; Compose data</li>
+<li><code>/mnt/repos-staging</code> -&gt; Staging</li>
+<li><code>/mnt/repos-production</code> -&gt; Production</li>
+</ul>
+<h3 id="empanadas">Empanadas<a class="headerlink" href="#empanadas" title="Permanent link">&para;</a></h3>
+<p>Each repository or set of repositories are controlled by various comps and pungi configurations that are translated into peridot. Empanadas is used to run a reposync from peridot's yumrepofs repositories, generate ISO's, and create a pungi compose look-a-like. Because of this, the comps and pungi-rocky configuration is not referenced with empanadas.</p>
+<h3 id="running-a-compose">Running a Compose<a class="headerlink" href="#running-a-compose" title="Permanent link">&para;</a></h3>
+<p>First, the toolkit must be cloned. In the <code>iso/empanadas</code> directory, run <code>poetry install</code>. You'll then have access to the various commands needed:</p>
+<ul>
+<li><code>sync_from_peridot</code></li>
+<li><code>build-iso</code></li>
+<li><code>build-iso-extra</code></li>
+<li><code>pull-unpack-tree</code></li>
+<li><code>pull-cloud-image</code></li>
+<li><code>finalize_compose</code></li>
+</ul>
+<p>To perform a full compose, this order is expected (replacing X with major version or config profile)</p>
+<div class="highlight"><pre><span></span><code># This creates a brand new directory under /mnt/compose/X and symlinks it to latest-Rocky-X
+poertry run sync_from_peridot --release X --hashed --repoclosure --full-run
+
+# On each architecture, this must be ran to generate the lorax images
+# !! Use --rc if the image is a release candidate or a beta image
+# Note: This is typically done using kubernetes and uploaded to a bucket
+poetry run build-iso --release X --isolation=None
+
+# The images are pulled from the bucket
+poetry run pull-unpack-tree --release X
+
+# The extra ISO&#39;s (usually just DVD) are generated
+# !! Use --rc if the image is a release candidate or a beta image
+# !! Set --extra-iso-mode to mock if desired
+# !! If there is more than the dvd, remove --extra-iso dvd
+poetry run build-iso-extra --release X --extra-iso dvd --extra-iso-mode podman
+
+# This pulls the generic and EC2 cloud images
+poetry run pull-cloud-image --release X
+
+# This ensures everything is closed out for a release. This copies iso&#39;s, images,
+# generates metadata, and the like.
+# !! DO NOT RUN DURING INCREMENTAL UPDATES !!
+poetry run finalize_compose --release X
+</code></pre></div>
+<h2 id="syncing-composes">Syncing Composes<a class="headerlink" href="#syncing-composes" title="Permanent link">&para;</a></h2>
+<p>Syncing utilizes the sync scripts provided in the release engineering toolkit.</p>
+<p>When the scripts are being ran, they are usually ran with a specific purpose or a reason. As such, the correct scripts should be ran.</p>
+<p>The below are common vars files. common_X will override what's in common. Typically these set what repositories exist and how they are named or look at the top level. These also set the current major.minor release as necessary.</p>
+<div class="highlight"><pre><span></span><code>.
+├── common
+├── common_8
+├── common_9
+</code></pre></div>
+<p>These are for the releases in general. What they do is noted below.</p>
+<div class="highlight"><pre><span></span><code>├── gen-torrents.sh                  -&gt; Generates torrents for images
+├── minor-release-sync-to-staging.sh -&gt; Syncs a minor release to staging
+├── prep-staging-X.sh                -&gt; Preps staging updates and signs repos (only for 8)
+├── sign-repos-only.sh               -&gt; Signs the repomd (only for 8)
+├── sync-file-list-parallel.sh       -&gt; Generates file lists in parallel for mirror sync scripts
+├── sync-to-prod.sh                  -&gt; Syncs staging to production
+├── sync-to-prod.delete.sh           -&gt; Syncs staging to production (deletes artifacts that are no longer in staging)
+├── sync-to-prod-sig.sh              -&gt; Syncs a sig provided compose to production
+├── sync-to-staging.sh               -&gt; Syncs a provided compose to staging
+├── sync-to-staging.delete.sh        -&gt; Syncs a provided compose to staging (deletes artifacts that are no longer in the compose)
+├── sync-to-staging-sig.sh           -&gt; Syncs a sig provided compose to staging
+</code></pre></div>
+<p>Generally, you will only run <code>sync-to-staging.sh</code> or <code>sync-to-staging.delete.sh</code> to sync. The former is for older releases, the latter is for newer releases.</p>
+<div class="highlight"><pre><span></span><code># The below syncs to staging for Rocky Linux 8
+RLVER=8 bash sync-to-staging.sh Rocky
+# The below syncs to staging for Rocky Linux 9
+RLVER=9 bash sync-to-staging.delete.sh Rocky
+</code></pre></div>
+<p>Once the syncs are done, staging must be tested and vetted before being sent to production. Once staging is completed, it is synced to production.</p>
+<div class="highlight"><pre><span></span><code>bash RLVER=8 sync-to-prod.sh
+bash RLVER=9 sync-to-prod.delete.sh
+bash sync-file-list-parallel.sh
+</code></pre></div>
+<p>During this phase, staging is rsynced with production, the file list is updated, and the full time list is also updated to allow mirrors to know that the repositories have been updated and that they can sync.</p>
+<p><strong>Note</strong>: If multiple releases are being updated, it is important to run the syncs to completion before running the file list parallel script.</p>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2022-10-21
+      2023-04-04
     
   </small>
 </div>
