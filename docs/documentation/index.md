@@ -1,5 +1,5 @@
 ---
-title: Composing Releases
+title: Release General Overview
 ---
 
 This section goes over at a high level how we compose releases for Rocky Linux.
