@@ -57,5 +57,3 @@ Step by step, it looks like this:
 * Empanadas syncs updates as needed, either per repo or all repos at once
 * Updates are synced to staging to be verified
 * Staging is synced to production to allow mirror syncing
-
-{% include "resources_bottom.md" %}
