@@ -87,4 +87,15 @@ options.
 Note that for each of these commands, it is fully expected you are running
 `poetry run` in the root of empanadas.
 
+```
+# Syncs all repositoryes for the "9" release
+% poetry run sync_from_peridot --release 9 --clean-old-packages
+
+# Syncs only the BaseOS repository without syncing sources
+% poetry run sync_from_peridot --release 9 --clean-old-packages --repo BaseOS --ignore-source
+
+# Syncs only AppStream for ppc64le
+% poetry run sync_from_peridot --release 9 --clean-old-packages --repo AppStream --arch ppc64le
+```
+
 {% include "resources_bottom.md" %}
