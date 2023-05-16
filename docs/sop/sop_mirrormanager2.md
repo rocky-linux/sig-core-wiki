@@ -87,8 +87,22 @@ For the following steps, the following must be completed:
 2. Update the redirects for `$reponame-$releasever`
 
     a. Use psql to mirrormanager server: `psql -U mirrormanager -W -h mirrormanager_db_host mirrormanager_db`
-    b. Confirm that all three columns are filled and that the second and third columns are identical: `select rr.from_repo AS "From Repo", rr.to_repo AS "To Repo", r.prefix AS "Target Repo" FROM repository_redirect AS rr LEFT JOIN repository AS r ON rr.to_repo = r.prefix GROUP BY r.prefix, rr.to_repo, rr.from_repo ORDER BY r.prefix ASC;`
-    c. Change the `majorversion` redirects to point to the new point release, for example: `update repository_redirect set to_repo = regexp_replace(to_repo, '9\.0', '9.1') where from_repo ~ '(\w+)-9';`
+
+    b. Confirm that all three columns are filled and that the second and third columns are identical:
+    ```
+    select rr.from_repo AS "From Repo", rr.to_repo AS "To Repo", r.prefix AS "Target Repo" FROM repository_redirect AS rr LEFT JOIN repository AS r ON rr.to_repo = r.prefix GROUP BY r.prefix, rr.to_repo, rr.from_repo ORDER BY r.prefix ASC;`
+    ```
+
+    c. Change the `majorversion` redirects to point to the new point release, for example:
+    ```
+    update repository_redirect set to_repo = regexp_replace(to_repo, '9\.1', '9.2') where from_repo ~ '(\w+)-9-(debug|source)';`
+    ```
+
+    d. Insert new redirects for the major version expected by the installer
+
+    ```
+    insert into repository_redirect (from_repo,to_repo) select REGEXP_REPLACE(rr.from_repo,'9\.1','9.2'),REGEXP_REPLACE(rr.to_repo,'9\.1','9.2')FROM repository_redirect AS rr WHERE from_repo ~ '(\w+)-9.1';
+    ```
 
 3. Generate the mirrorlist cache and restart the debuglist and verify.
 
@@ -113,6 +127,10 @@ Users can change user active, *but* they cannot change admin active. It is bette
 Admins can also view https://mirrors.rockylinux.org/mirrormanager/admin/all_sites if necessary.
 
 Example of table columns:
+
+!!! Note
+
+    These mirrors are here soley as an example and not to call anyone out, every mirror shows up on here at one point, for some reason, due to natural variations in how mirrors sync.
 
 ```
 [mirrormanager@ord1-prod-mirrormanager001 propagation]$ awk -v shasum=$(curl -s https://dl.rockylinux.org/pub/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum | awk '{print $1}') -F'::' '{split($0,data,":")} {if ($4 != shasum) {print data[5], data[6], $2, $7}}' < rocky-9.0-BaseOS-x86_64_propagation.log.1660611632 | column -t
