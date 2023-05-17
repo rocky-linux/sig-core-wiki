@@ -89,7 +89,6 @@ These are for the releases in general. What they do is noted below.
 ```
 ├── gen-torrents.sh                  -> Generates torrents for images
 ├── minor-release-sync-to-staging.sh -> Syncs a minor release to staging
-├── prep-staging-X.sh                -> Preps staging updates and signs repos
 ├── sign-repos-only.sh               -> Signs the repomd (only)
 ├── sync-to-prod.sh                  -> Syncs staging to production
 ├── sync-to-staging.sh               -> Syncs a provided compose to staging
@@ -103,9 +102,6 @@ When doing updates, the order of operations (preferably) would be:
 ```
 * sync-to-staging.sh
 * sync-to-staging-sig.sh -> Only if sigs are updated
-* prep-staging-8.sh`     -> This is required to ensure the groups, comps, and
-                            module data stay sane. This helps us provide older
-                            packages in the repos as well as signs repo metadata.
 * sync-to-prod.sh        -> After the initial testing, it is sent to prod.
 ```
 
@@ -117,7 +113,6 @@ RLVER=8 bash sync-to-staging.sh Plus
 RLVER=8 bash sync-to-staging.sh Extras
 RLVER=8 bash sync-to-staging.sh Rocky-devel
 RLVER=8 bash sync-to-staging.sh Rocky
-bash prep-staging-8.sh
 ```
 
 Once the syncs are done, staging must be tested and vetted before being sent to production. During this stage, the `updateinfo.xml` is also applied where necessary to the repositories to provide errata. Once staging is completed, it is synced to production.
