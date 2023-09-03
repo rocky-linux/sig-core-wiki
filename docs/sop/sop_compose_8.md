@@ -27,6 +27,8 @@ There are several git repositories used in the overall composition of a reposito
 
 ## Composing Repositories
 
+For every stable script, there is an equal beta or lookahead script available.
+
 ### Mount Structure
 
 There is a designated system that takes care of composing repositories. These systems contain the necessary EFS/NFS mounts for the staging and production repositories as well as composes.
@@ -50,6 +52,7 @@ Inside the `pungi` git repository, the folder `scripts` contain the necessary sc
 Each script is titled appropriately:
 
 * `produce-X.sh` -> Generates a full compose for X major release, typically set to the current minor release according to `rX.conf`
+* `produce-X-full.sh` -> Generates a full compose for X major release, including extras, plus, and devel in one go.
 * `updates-X.sh` -> Generates a smaller compose for X major release, typically set to the current minor release according to `rX.conf`
 * `updates-X-NAME.sh` -> Generates a compose for the specific compose, such as NFV, Rocky-devel, Extras, or Plus
 
@@ -67,6 +70,9 @@ produce-8.sh
 updates-8-devel.sh
 updates-8-extras.sh
 updates-8-plus.sh
+
+# ! OR !
+produce-8-full.sh
 ```
 
 ## Syncing Composes
@@ -119,7 +125,7 @@ Once the syncs are done, staging must be tested and vetted before being sent to 
 
 ```
 bash RLVER=8 sync-to-prod.sh
-bash bash sync-file-list-parallel.sh
+bash sync-file-list-parallel.sh
 ```
 
 During this phase, staging is rsynced with production, the file list is updated, and the full time list is also updated to allow mirrors to know that the repositories have been updated and that they can sync.

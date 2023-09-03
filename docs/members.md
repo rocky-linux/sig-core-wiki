@@ -6,7 +6,7 @@ SIG/Core is a mix of Release Engineering and Infrastructure members to ensure a 
 
 | Role                                              | Name                            | Email                   | Mattermost Name   | IRC Name           |
 |---------------------------------------------------|---------------------------------|------------------------ |-------------------|--------------------|
-| Identity Management & Release Engineering Co-Lead | Louis Abel                      | label@rockylinux.org    | @nazunalika       | Sokel/label/Sombra |
+| Release Engineering Co-Lead and Infrastructure    | Louis Abel                      | label@rockylinux.org    | @nazunalika       | Sokel/label/Sombra |
 | Release Engineering Co-Lead                       | Mustafa Gezen                   | mustafa@rockylinux.org  | @mustafa          | mstg               |
 | Release Engineering and Development               | Skip Grube                      | skip@rockylinux.org     | @skip77           |                    |
 | Release Engineering and Development               | Sherif Nagy                     | sherif@rockylinux.org   | @sherif           |                    |
