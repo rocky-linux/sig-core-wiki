@@ -69,7 +69,6 @@ This setup also allows pungi to reuse previous package set data to reduce the ti
 produce-8.sh
 updates-8-devel.sh
 updates-8-extras.sh
-updates-8-plus.sh
 
 # ! OR !
 produce-8-full.sh
@@ -115,7 +114,6 @@ An example of order:
 
 ```
 # The below syncs to staging
-RLVER=8 bash sync-to-staging.sh Plus
 RLVER=8 bash sync-to-staging.sh Extras
 RLVER=8 bash sync-to-staging.sh Rocky-devel
 RLVER=8 bash sync-to-staging.sh Rocky
