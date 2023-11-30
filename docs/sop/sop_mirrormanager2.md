@@ -95,13 +95,13 @@ For the following steps, the following must be completed:
 
     c. Change the `majorversion` redirects to point to the new point release, for example:
     ```
-    update repository_redirect set to_repo = regexp_replace(to_repo, '9\.1', '9.2') where from_repo ~ '(\w+)-9-(debug|source)';`
+    update repository_redirect set to_repo = regexp_replace(to_repo, '9\.2', '9.3') where from_repo ~ '(\w+)-9-(debug|source)';`
     ```
 
     d. Insert new redirects for the major version expected by the installer
 
     ```
-    insert into repository_redirect (from_repo,to_repo) select REGEXP_REPLACE(rr.from_repo,'9\.1','9.2'),REGEXP_REPLACE(rr.to_repo,'9\.1','9.2')FROM repository_redirect AS rr WHERE from_repo ~ '(\w+)-9.1';
+    insert into repository_redirect (from_repo,to_repo) select REGEXP_REPLACE(rr.from_repo,'9\.2','9.3'),REGEXP_REPLACE(rr.to_repo,'9\.2','9.3')FROM repository_redirect AS rr WHERE from_repo ~ '(\w+)-9.2';
     ```
 
 3. Generate the mirrorlist cache and restart the debuglist and verify.
@@ -110,13 +110,13 @@ Once the bitflip is initiated, restart mirrorlist and reenable all cronjobs.
 
 ### Out-of-date Mirrors
 
-1. Get current shasum of repomd.xml. For example: `shasum=$(curl https://dl.rockylinux.org/pub/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum)`
+1. Get current shasum of repomd.xml. For example: `shasum=$(curl https://dl.rockylinux.org/pub/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum)`
 2. Compare against latest propagation log:
 
 ```
-tail -latr /var/log/mirrormanager/propagation/rocky-9.0-BaseOS-x86_64_propagation.log.*`
+tail -latr /var/log/mirrormanager/propagation/rocky-9.3-BaseOS-x86_64_propagation.log.*`
 
-export VER=9.0
+export VER=9.3
 awk -v shasum=$(curl -s https://dl.rockylinux.org/pub/rocky/$VER/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum | awk '{print $1}') -F'::' '{split($0,data,":")} {if ($4 != shasum) {print data[5], data[6], $2, $7}}' < $(find /var/log/mirrormanager/propagation/ -name "rocky-${VER}-BaseOS-x86_64_propagation.log*" -mtime -1 | tail -1)'
 ```
 
@@ -133,22 +133,22 @@ Example of table columns:
     These mirrors are here soley as an example and not to call anyone out, every mirror shows up on here at one point, for some reason, due to natural variations in how mirrors sync.
 
 ```
-[mirrormanager@ord1-prod-mirrormanager001 propagation]$ awk -v shasum=$(curl -s https://dl.rockylinux.org/pub/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum | awk '{print $1}') -F'::' '{split($0,data,":")} {if ($4 != shasum) {print data[5], data[6], $2, $7}}' < rocky-9.0-BaseOS-x86_64_propagation.log.1660611632 | column -t
-164  mirror.host.ag            http://mirror.host.ag/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml             404
-173  rocky.centos-repo.net     http://rocky.centos-repo.net/9.0/BaseOS/x86_64/os/repodata/repomd.xml            403
-92   rocky.mirror.co.ge        http://rocky.mirror.co.ge/9.0/BaseOS/x86_64/os/repodata/repomd.xml               404
-289  mirror.vsys.host          http://mirror.vsys.host/rockylinux/9.0/BaseOS/x86_64/os/repodata/repomd.xml      404
-269  mirrors.rackbud.com       http://mirrors.rackbud.com/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml        200
-295  mirror.ps.kz              http://mirror.ps.kz/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml               200
-114  mirror.liteserver.nl      http://rockylinux.mirror.liteserver.nl/9.0/BaseOS/x86_64/os/repodata/repomd.xml  200
-275  mirror.upsi.edu.my        http://mirror.upsi.edu.my/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml         200
-190  mirror.kku.ac.th          http://mirror.kku.ac.th/rocky-linux/9.0/BaseOS/x86_64/os/repodata/repomd.xml     404
-292  mirrors.cat.pdx.edu       http://mirrors.cat.pdx.edu/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml        200
-370  mirrors.gbnetwork.com     http://mirrors.gbnetwork.com/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml      404
-308  mirror.ihost.md           http://mirror.ihost.md/rockylinux/9.0/BaseOS/x86_64/os/repodata/repomd.xml       404
-87   mirror.freedif.org        http://mirror.freedif.org/Rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml         404
-194  mirrors.bestthaihost.com  http://mirrors.bestthaihost.com/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml   404
-30   mirror.admax.se           http://mirror.admax.se/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml            200
-195  mirror.uepg.br            http://mirror.uepg.br/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml             404
-247  mirrors.ipserverone.com   http://mirrors.ipserverone.com/rocky/9.0/BaseOS/x86_64/os/repodata/repomd.xml    404'
+[mirrormanager@ord1-prod-mirrormanager001 propagation]$ awk -v shasum=$(curl -s https://dl.rockylinux.org/pub/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml | sha256sum | awk '{print $1}') -F'::' '{split($0,data,":")} {if ($4 != shasum) {print data[5], data[6], $2, $7}}' < rocky-9.3-BaseOS-x86_64_propagation.log.1660611632 | column -t
+164  mirror.host.ag            http://mirror.host.ag/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml             404
+173  rocky.centos-repo.net     http://rocky.centos-repo.net/9.3/BaseOS/x86_64/os/repodata/repomd.xml            403
+92   rocky.mirror.co.ge        http://rocky.mirror.co.ge/9.3/BaseOS/x86_64/os/repodata/repomd.xml               404
+289  mirror.vsys.host          http://mirror.vsys.host/rockylinux/9.3/BaseOS/x86_64/os/repodata/repomd.xml      404
+269  mirrors.rackbud.com       http://mirrors.rackbud.com/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml        200
+295  mirror.ps.kz              http://mirror.ps.kz/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml               200
+114  mirror.liteserver.nl      http://rockylinux.mirror.liteserver.nl/9.3/BaseOS/x86_64/os/repodata/repomd.xml  200
+275  mirror.upsi.edu.my        http://mirror.upsi.edu.my/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml         200
+190  mirror.kku.ac.th          http://mirror.kku.ac.th/rocky-linux/9.3/BaseOS/x86_64/os/repodata/repomd.xml     404
+292  mirrors.cat.pdx.edu       http://mirrors.cat.pdx.edu/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml        200
+370  mirrors.gbnetwork.com     http://mirrors.gbnetwork.com/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml      404
+308  mirror.ihost.md           http://mirror.ihost.md/rockylinux/9.3/BaseOS/x86_64/os/repodata/repomd.xml       404
+87   mirror.freedif.org        http://mirror.freedif.org/Rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml         404
+194  mirrors.bestthaihost.com  http://mirrors.bestthaihost.com/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml   404
+30   mirror.admax.se           http://mirror.admax.se/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml            200
+195  mirror.uepg.br            http://mirror.uepg.br/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml             404
+247  mirrors.ipserverone.com   http://mirrors.ipserverone.com/rocky/9.3/BaseOS/x86_64/os/repodata/repomd.xml    404'
 ```
