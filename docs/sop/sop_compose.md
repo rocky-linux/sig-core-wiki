@@ -48,6 +48,8 @@ First, the toolkit must be cloned. In the `iso/empanadas` directory, run `poetry
 * `pull-cloud-image`
 * `finalize_compose`
 
+#### Full Compose
+
 To perform a full compose, this order is expected (replacing X with major version or config profile)
 
 ```
@@ -75,6 +77,16 @@ poetry run pull-cloud-image --release X
 # generates metadata, and the like.
 # !! DO NOT RUN DURING INCREMENTAL UPDATES !!
 poetry run finalize_compose --release X
+```
+
+#### Incremental Compose
+
+It is possible to simply compose singular repos if you know which ones you want to sync. This can be done when it's not for a brand new release.
+
+```
+# Set your repos as desired. --arch is also acceptable.
+# --ignore-debug and --ignore-source are also acceptable options.
+poetry run sync_from_peridot --release X --hashed --clean-old-packages --repo X,Y,Z
 ```
 
 ## Syncing Composes
@@ -120,8 +132,8 @@ RLVER=9 bash sync-to-staging.delete.sh Rocky
 Once the syncs are done, staging must be tested and vetted before being sent to production. Once staging is completed, it is synced to production.
 
 ```
-bash RLVER=8 sync-to-prod.sh
-bash RLVER=9 sync-to-prod.delete.sh
+# Set X to whatever release
+bash RLVER=X sync-to-prod.delete.sh
 bash sync-file-list-parallel.sh
 ```
 

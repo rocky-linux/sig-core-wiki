@@ -55,6 +55,7 @@ Each script is titled appropriately:
 * `produce-X-full.sh` -> Generates a full compose for X major release, including extras, plus, and devel in one go.
 * `updates-X.sh` -> Generates a smaller compose for X major release, typically set to the current minor release according to `rX.conf`
 * `updates-X-NAME.sh` -> Generates a compose for the specific compose, such as NFV, Rocky-devel, Extras, or Plus
+* `updates-X-full.sh` -> Generates a full incremental compose for the X release, which includes extras, plus, and devel in one go. Does NOT make ISO's.
 
 When these scripts are ran, they generate an appropriate directory under `/mnt/compose/X` with a directory and an accompanying symlink. For example. If an update to `Rocky` was made using `updates-8.sh`, the below would be made:
 
@@ -122,10 +123,29 @@ RLVER=8 bash sync-to-staging.sh Rocky
 Once the syncs are done, staging must be tested and vetted before being sent to production. During this stage, the `updateinfo.xml` is also applied where necessary to the repositories to provide errata. Once staging is completed, it is synced to production.
 
 ```
-bash RLVER=8 sync-to-prod.sh
+pushd /mnt/repos-staging/mirror/pub/rocky/8.X
+python3.9 /usr/local/bin/apollo_tree -p $(pwd) -n 'Rocky Linux 8 $arch' -i Live -i Minimal -i devel -i extras -i images -i isos -i live -i metadata -i Devel -i plus -i nfv
+popd
+RLVER=8 bash sign-repos-only.sh
+RLVER=8 bash sync-to-prod.sh
 bash sync-file-list-parallel.sh
 ```
 
 During this phase, staging is rsynced with production, the file list is updated, and the full time list is also updated to allow mirrors to know that the repositories have been updated and that they can sync.
 
 **Note**: If multiple releases are being updated, it is important to run the syncs to completion before running the file list parallel script.
+
+## Quicker Composes
+
+On the designated compose box, there is a script that can do all of the incremental steps.
+
+```
+cd /root/cron
+bash stable-updates
+```
+
+The same goes for a full production.
+
+```
+bash stable
+```
