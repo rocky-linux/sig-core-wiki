@@ -10,37 +10,57 @@ repo_url: https://git.resf.org/sig_core/wiki
 repo_name: sig_core/wiki
 edit_uri: edit/main/docs/
 
+copyright: Copyright &copy; 2022-2024 Rocky Enterprise Software Foundation
+
+extra_css:
+  - assets/extra.css
+
+# Configuration
 theme:
   name: material
+  logo: assets/resf-white.svg
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: teal
+      scheme: resf
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: teal
+      scheme: resf-dark
       toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-  logo: assets/icon-white.svg
+        icon: material/weather-sunny
+        name: Switch to light mode
   highlightjs: true
   hljs_languages:
     - bash
+    - perl
     - python
     - yaml
-    - perl
   features:
+    - navigation.expand
+    - navigation.indexes
+    - navigation.instant
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.path
     - search.highlight
     - search.suggest
     - toc.integrate
-    #- navigation.tabs
-    #- navigation.tabs.sticky
-    #- navigation.top
+    - content.action.edit
+
+# Plugins
+plugins:
+  - autolinks
+  - social
+  - awesome-pages
+  - git-revision-date-localized:
+      type: date
+  - search
+  - macros:
+      include_dir: docs/include
+
+# Extensions
 markdown_extensions:
   - abbr
   - admonition
@@ -48,22 +68,12 @@ markdown_extensions:
   - def_list
   - footnotes
   - meta
-  - pymdownx.details # collapsable attributions
+  - pymdownx.details # this allows collapsible attributions
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
   - toc:
       permalink: true
-
-plugins:
-  - autolinks
-  - awesome-pages
-  - git-revision-date
-  - search
-  - macros:
-      include_dir: docs/include
-copyright: Copyright &copy; 2023 Rocky Enterprise Software Foundation
-...
