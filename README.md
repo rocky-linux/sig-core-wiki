@@ -1,4 +1,4 @@
-# SIG/Core Wiki
+# Release Engineering (SIG/Core) Wiki
 [![mkdocs build](https://github.com/rocky-linux/sig-core-wiki/actions/workflows/gh.yml/badge.svg)](https://github.com/rocky-linux/sig-core-wiki/actions/workflows/gh.yml)
 
 This is the wiki repository for SIG/Core.
