@@ -6,7 +6,7 @@ title: SIG/Core
 
 ## About
 
-The Rocky Linux Core Special Interest Group (SIG/Core) dedicates themselves to the development, building, management, production, and release of Rocky Linux for the Enterprise Linux community and the many users around the world. This group is a mixture of core Rocky Linux developers and infrastructure and the members of this group are also members of other groups within the Rocky Linux community (such as SIG/AltArch) as well as the Enterprise Linux community as a whole.
+The Rocky Linux Core Special Interest Group (SIG/Core) dedicates themselves to the development, building, management, production, and release of Rocky Linux for the Enterprise Linux community and the many users around the world.This group is the combination of Rocky Linux Release Engineering team which combines development and infrastructure, where members of this group are members of other Special Interest Groups within the Rocky Linux community, such as SIG/AltArch. Some members can be found in other parts of the Enterprise Linux community as a whole, such as EPEL.
 
 ## Mission
 
