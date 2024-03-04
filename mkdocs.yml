@@ -1,9 +1,9 @@
 ---
 # Wiki information
-site_name: SIG/Core Wiki
+site_name: Release Engineering (SIG/Core) Wiki
 site_url: https://sig-core.rocky.page
 site_description: >-
-  The wiki for Rocky Linux Core SIG.
+  The wiki for Rocky Linux Release Engineering (SIG/Core)
 
 # Repository
 repo_url: https://git.resf.org/sig_core/wiki
@@ -65,5 +65,5 @@ plugins:
   - search
   - macros:
       include_dir: docs/include
-copyright: Copyright &copy; 2023 Rocky Enterprise Software Foundation
+copyright: Copyright &copy; 2024 Rocky Enterprise Software Foundation
 ...

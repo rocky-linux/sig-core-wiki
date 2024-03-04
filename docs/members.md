@@ -2,7 +2,7 @@
 title: Members
 ---
 
-Release Engineering (SIG/Core) is a mix of Development and Infrastructure members to ensure a high quality release of Rocky Linux as well as the uptime of the services provided to the community. The current members of this group are listed in the table below.
+Release Engineering (SIG/Core) is a mix of Development and Infrastructure members to ensure a high quality release of Rocky Linux as well as the uptime of the services provided to the community. The current members of this group are listed in the table below. Some members may also be found in various Special Interest Groups, such as SIG/AltArch and SIG/Kernel.
 
 | Role                                              | Name                            | Email                   | Mattermost Name   | IRC Name           |
 |---------------------------------------------------|---------------------------------|------------------------ |-------------------|--------------------|
