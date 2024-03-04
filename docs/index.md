@@ -8,7 +8,7 @@ title: Release Engineering (SIG/Core)
 
 The Rocky Linux Release Engineering Team (who also refers to themselves as SIG/Core) dedicates themselves to the development, building, management, production, and release of Rocky Linux. This group combines development and infrastructure in a single cohesive unit of individuals that ultimately make the distribution happen.
 
-While not a strict Special Interest Group (as defined by [the Rocky Linux wiki](https://wiki.rockylinux.org/special_interest_groups/)), the primary overarching goal (or "interest") is to ensure Rocky Linux is built and released in a complete and functional manner.
+While not a strict Special Interest Group (as defined by [the Rocky Linux wiki](https://wiki.rockylinux.org/special_interest_groups/)), the primary goal (or "interest") is to ensure Rocky Linux is built and released in a complete and functional manner. The secondary goal is to ensure proper collaboration and development of the Peridot build system.
 
 ## Mission
 
@@ -31,7 +31,6 @@ There are various ways to get in touch with Release Engineering and provide help
 
     * Mattermost: [~development](https://chat.rockylinux.org/rocky-linux/channels/development) on Mattermost
     * IRC: #rockylinux and #rockylinux-devel on [libera.chat](https://libera.chat)
-    * Matrix: [Rocky Linux General / Support](https://matrix.to/#/#rockylinux-support:matrix.org) and [Rocky Linux Development](https://matrix.to/#/#rockylinux-development:matrix.org)
 
 * [RESF SIG/Core Issue Tracker](https://git.resf.org/sig_core/meta/issues)
 * [Mail List](https://lists.resf.org/mailman3/lists/rocky.lists.resf.org/)
