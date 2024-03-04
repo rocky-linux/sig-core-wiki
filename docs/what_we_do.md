@@ -2,7 +2,7 @@
 title: What We Do
 ---
 
-SIG/Core (or Release Engineering) was brought together as a combination of varying expertise (development and infrastructure) to try to fill in gaps of knowledge but to also to ensure the primary goal of having a stable release of Rocky Linux is reached.
+Release Engineering (SIG/Core) was brought together as a combination of varying expertise (development and infrastructure) to try to fill in gaps of knowledge but to also to ensure the primary goal of having a stable release of Rocky Linux is reached.
 
 Some of the things we do in pursuit of our mission goals:
 

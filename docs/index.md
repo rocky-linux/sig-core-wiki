@@ -1,16 +1,16 @@
 ---
-title: SIG/Core
+title: SIG/Core / Release Engineering
 ---
 
-# SIG/Core Wiki
+# SIG/Core / Release Engineering Wiki
 
 ## About
 
-The Rocky Linux Core Special Interest Group (SIG/Core) dedicates themselves to the development, building, management, production, and release of Rocky Linux for the Enterprise Linux community and the many users around the world.This group is the combination of Rocky Linux Release Engineering team which combines development and infrastructure, where members of this group are members of other Special Interest Groups within the Rocky Linux community, such as SIG/AltArch. Some members can be found in other parts of the Enterprise Linux community as a whole, such as EPEL.
+The Rocky Linux Release Engineering Team, who refers to themselves as SIG/Core, dedicates themselves to the development, building, management, production, and release of Rocky Linux for the Enterprise Linux community and the many users around the world.This group is the combination of Rocky Linux Release Engineering team which combines development and infrastructure, where members of this group are members of other Special Interest Groups within the Rocky Linux community, such as SIG/AltArch. Some members can be found in other parts of the Enterprise Linux community as a whole, such as EPEL.
 
 ## Mission
 
-SIG/Core strives to ensure a stable distribution is developed, built, tested, and provided to the community from the RESF as a compatible derivative of Red Hat Enterprise Linux. To achieve this goal, some of the things we do are:
+Release Engineering strives to ensure a stable distribution is developed, built, tested, and provided to the community from the RESF as a compatible derivative of Red Hat Enterprise Linux. To achieve this goal, some of the things we do are:
 
 * Ensuring a quality and fully compatible release product
 * Developing and iterating on the build systems and architecture
@@ -23,7 +23,7 @@ See the [What We Do](what_we_do.md) page for a more detailed explanation of our 
 
 ## Getting In Touch / Contributing
 
-There are various ways to get in touch with SIG/Core and provide help, assistance, or even just ideas that can benefit us or the entire community.
+There are various ways to get in touch with Release Engineering and provide help, assistance, or even just ideas that can benefit us or the entire community.
 
 * Chat
 
