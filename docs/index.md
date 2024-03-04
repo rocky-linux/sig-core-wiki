@@ -8,7 +8,7 @@ title: Release Engineering (SIG/Core)
 
 The Rocky Linux Release Engineering Team (who also refers to themselves as SIG/Core) dedicates themselves to the development, building, management, production, and release of Rocky Linux. This group combines development and infrastructure in a single cohesive unit of individuals that ultimately make the distribution happen.
 
-While not a strict Special Interest Group (as defined by [the Rocky Linux wiki](https://wiki.rockylinux.org/special_interest_groups/)), the primary, overarching goal (or "interest") is to ensure Rocky Linux is built and released in a complete and functional manner.
+While not a strict Special Interest Group (as defined by [the Rocky Linux wiki](https://wiki.rockylinux.org/special_interest_groups/)), the primary overarching goal (or "interest") is to ensure Rocky Linux is built and released in a complete and functional manner.
 
 ## Mission
 
