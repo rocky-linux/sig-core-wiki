@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sig-core.rocky.page/include/resources_bottom/">
+        <link rel="canonical" href="https://sig-core.rocky.page/legacy/koji_tagging/">
       
       
-        <link rel="prev" href="../../documentation/references/empanadas_sig_config/">
+        <link rel="prev" href="../debrand_list/">
       
       
-        <link rel="next" href="../../legacy/">
+        <link rel="next" href="../../sop/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Resources bottom - Release Engineering (SIG/Core) Wiki</title>
+        <title>Koji Tagging Strategy - Release Engineering (SIG/Core) Wiki</title>
       
     
     
@@ -75,6 +75,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#contact-information" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -106,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Resources bottom
+              Koji Tagging Strategy
             
           </span>
         </div>
@@ -829,100 +834,83 @@
   
 
 
-  <h1>Resources bottom</h1>
+  <h1>Koji Tagging Strategy</h1>
 
-<h4>Resources</h4>
-
-<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Account Services</label><label for="__tabbed_1_2">Git (RESF Git Service)</label><label for="__tabbed_1_3">Git (Rocky Linux GitHub)</label><label for="__tabbed_1_4">Git (Rocky Linux GitLab)</label><label for="__tabbed_1_5">Mail Lists</label><label for="__tabbed_1_6">Contacts</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p><strong>URL</strong>: <a href="https://accounts.rockylinux.org">https://accounts.rockylinux.org</a></p>
-<p><strong>Purpose</strong>: Account Services maintains the accounts for almost all components of the Rocky ecosystem</p>
-<p><strong>Technology</strong>: Noggin used by Fedora Infrastructure</p>
-<p><strong>Contact</strong>: <code>~Infrastructure</code> in Mattermost and <code>#rockylinux-infra</code> in Libera IRC</p>
-</div>
-<div class="tabbed-block">
-<p><strong>URL</strong>: <a href="https://git.resf.org">https://git.resf.org</a></p>
-<p><strong>Purpose</strong>: General projects, code, and so on for the Rocky Enterprise Software Foundation.</p>
-<p><strong>Technology</strong>: <a href="https://gitea.io/en-us/">Gitea</a></p>
-<p><strong>Contact</strong>: <code>~Infrastructure</code>, <code>~Development</code> in Mattermost and <code>#rockylinux-infra</code>, <code>#rockylinux-devel</code> in Libera IRC</p>
-</div>
-<div class="tabbed-block">
-<p><strong>URL</strong>: <a href="https://github.com/rocky-linux">https://github.com/rocky-linux</a></p>
-<p><strong>Purpose</strong>: General purpose code, assets, and so on for Rocky Linux. Some content is mirrored to the RESF Git Service.</p>
-<p><strong>Technology</strong>: <a href="https://github.com">GitHub</a></p>
-<p><strong>Contact</strong>: <code>~Infrastructure</code>, <code>~Development</code> in Mattermost and <code>#rockylinux-infra</code>, <code>#rockylinux-devel</code> in Libera IRC</p>
-</div>
-<div class="tabbed-block">
-<p><strong>URL</strong>: <a href="https://git.rockylinux.org">https://git.rockylinux.org</a></p>
-<p><strong>Purpose</strong>: Packages and light code for the Rocky Linux distribution</p>
-<p><strong>Technology</strong>: <a href="https://gitlab.com">GitLab</a></p>
-<p><strong>Contact</strong>: <code>~Infrastructure</code>, <code>~Development</code> in Mattermost and <code>#rockylinux-infra</code>, <code>#rockylinux-devel</code> in Libera IRC</p>
-</div>
-<div class="tabbed-block">
-<p><strong>URL</strong>: <a href="https://lists.resf.org">https://lists.resf.org</a></p>
-<p><strong>Purpose</strong>: Users can subscribe and interact with various mail lists for the Rocky ecosystem</p>
-<p><strong>Technology</strong>: Mailman 3 + Hyper Kitty</p>
-<p><strong>Contact</strong>: <code>~Infrastructure</code> in Mattermost and <code>#rockylinux-infra</code> in Libera IRC</p>
-</div>
-<div class="tabbed-block">
+<p>This document covers how the Rocky Linux Release Engineering Team handles the tagging for builds in Koji and how it affects the overall build process.</p>
+<h2 id="contact-information">Contact Information<a class="headerlink" href="#contact-information" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
-<th>Email</th>
-<th>Mattermost Name</th>
-<th>IRC Name</th>
+<th></th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Louis Abel</td>
-<td>label@rockylinux.org</td>
-<td>@nazunalika</td>
-<td>Sokel/label/Sombra</td>
+<td><strong>Owner</strong></td>
+<td>Release Engineering Team</td>
 </tr>
 <tr>
-<td>Mustafa Gezen</td>
-<td>mustafa@rockylinux.org</td>
-<td>@mustafa</td>
-<td>mstg</td>
+<td><strong>Email Contact</strong></td>
+<td>releng@rockylinux.org</td>
 </tr>
 <tr>
-<td>Skip Grube</td>
-<td>skip@rockylinux.org</td>
-<td>@skip77</td>
-<td></td>
+<td><strong>Mattermost Contacts</strong></td>
+<td><code>@label</code> <code>@mustafa</code> <code>@neil</code> <code>@tgo</code></td>
 </tr>
 <tr>
-<td>Sherif Nagy</td>
-<td>sherif@rockylinux.org</td>
-<td>@sherif</td>
-<td></td>
-</tr>
-<tr>
-<td>Pablo Greco</td>
-<td>pgreco@rockylinux.org</td>
-<td>@pgreco</td>
-<td>pgreco</td>
-</tr>
-<tr>
-<td>Neil Hanlon</td>
-<td>neil@resf.org</td>
-<td>@neil</td>
-<td>neil</td>
-</tr>
-<tr>
-<td>Taylor Goodwill</td>
-<td>tg@resf.org</td>
-<td>@tgo</td>
-<td>tg</td>
+<td><strong>Mattermost Channels</strong></td>
+<td><code>~Development</code></td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
+<h2 id="what-is-koji">What is Koji?<a class="headerlink" href="#what-is-koji" title="Permanent link">&para;</a></h2>
+<p>Koji is the build system used for Rocky Linux, as well as CentOS, Fedora, and likely others. Red Hat is likely to use a variant of Koji called "brew" with similar functionality and usage. Koji uses mock, a common RPM building utility, to build RPMs in a chroot environment.</p>
+<h2 id="architecture-of-koji">Architecture of Koji<a class="headerlink" href="#architecture-of-koji" title="Permanent link">&para;</a></h2>
+<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
+<p>Koji comprises of multiple components:</p>
+<ul>
+<li><code>koji-hub</code>, which is the center of all Koji operations. It runs XML-RPC and relies on other components to call it for actions. This piece will also talk to the database and is one component that has write access to the filesystem.</li>
+<li><code>kojid</code>, which is the daemon that runs on the builder nodes. It's responsibility is to talk to the hub for actions in which it can or has to perform, for example, building an RPM or install images. But that is not all that it can do.</li>
+<li><code>koji-web</code> is a set of scripts that provides the web interface that anyone can see at our <a href="https://kojidev.rockylinux.org">koji</a>.</li>
+<li><code>koji</code> is the command line utility that is commonly used - It is a wrapper of the various API commands that can be called. In our environment, it requires a login via kerberos.</li>
+<li><code>kojira</code> is a component that ensures repodata is updated among the build tags.</li>
+</ul>
+<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
+<p>Tags are the most important part of the koji ecosystem. With tags, you can have specific repository build roots for the entire distribution or just a simple subset of builds that should not polute the main build tags (for example, for SIGs where a package or two might be newer (or even older) than what's in BaseOS/AppStream.</p>
+<p>Using tags, you can setup what is called "inheritance". So for example. You can have a tag named <code>dist-rocky8-build</code> but it happens to inherit <code>dist-rocky8-updates-build</code>, which will likely have a newer set of packages than the former. Inheritance, in a way, can be considered setting "dnf priorities" if you've done that before. Another way to look at it is "ordering" and "what comes first".</p>
+<p>Targets call tags to send packages to build in, generally.</p>
+<h2 id="tag-strategy">Tag Strategy<a class="headerlink" href="#tag-strategy" title="Permanent link">&para;</a></h2>
+<p>The question that we get is "what's the difference between a build and an updates-build tag" - It's all about the inheritance. For example, let's take a look at <code>dist-rocky8-build</code></p>
+<div class="highlight"><pre><span></span><code>  dist-rocky8-build
+    el8
+    dist-rocky8
+    build-modules
+       . . .
+</code></pre></div>
+<p>In this tag, you can see that this build tag inherits el8 packages first, and then the packages in dist-rocky8, and then build-modules. This is where "base" packages start out at, generally and a lot of them won't be updated or even change with the lifecycle of the version.</p>
+<div class="highlight"><pre><span></span><code>dist-rocky8-updates-build
+    el8
+    dist-rocky8-updates
+        dist-rocky8
+    dist-rocky8-build
+        build-modules
+</code></pre></div>
+<p>This one is a bit different. Notice that it inherits el8 first, and then dist-rocky8-updates, which inherits dist-rocky8. And then it also pulls in dist-rocky8-build, the previous tag we were talking about. This tag is where updates for a minor release are sent to.</p>
+<div class="highlight"><pre><span></span><code>dist-rocky8_4-updates-build
+    el8_4
+    dist-rocky8-updates
+        dist-rocky8
+    dist-rocky8-build
+        el8
+        build-modules
+</code></pre></div>
+<p>Here's a more interesting one. Notice something? It's pretty similar to the last one, but see how it's named el8_4 instead? This is where updates during 8.4 are basically sent to and that's how they get tagged as <code>.el8_4</code> on the RPM's. The <code>el8_4</code> tag contains a build macros package that instructs the <code>%dist</code> tag to be set that way. When 8.5 comes out, we'll basically have the same setup.</p>
+<p>At the end of the day, builds that happen in these updates-build tags get dropped in dist-rocky8-updates.</p>
+<h3 id="what-about-modules">What about modules?<a class="headerlink" href="#what-about-modules" title="Permanent link">&para;</a></h3>
+<p>Modules are a bit tricky. We generally don't touch how MBS does its tags or what's going on there. When builds are being done with the modules, they do end up using the el8 packages in some manner or form. The modules are separated entirely from the main tags though, so they don't polute the main tags. You don't want a situation where say, you build the latest ruby, but something builds off the default version of ruby provided in <code>el8</code> and now you're in trouble and get dnf filtering issues.</p>
+<h3 id="how-do-we-determine-what-is-part-of-a-compose">How do we determine what is part of a compose?<a class="headerlink" href="#how-do-we-determine-what-is-part-of-a-compose" title="Permanent link">&para;</a></h3>
+<p>There are special tags that have a <code>-compose</code> suffix. These tags are used as a way to pull down packages for repository building during the pungi process.</p>
 
 
 
@@ -943,7 +931,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2022-10-15
+    2024-03-04
   </span>
 
     

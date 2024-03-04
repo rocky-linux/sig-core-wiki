@@ -71,6 +71,21 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://sig-core.rocky.page/legacy/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/legacy/debrand_list/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/legacy/koji_tagging/</loc>
+         <lastmod>2024-03-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://sig-core.rocky.page/sop/</loc>
          <lastmod>2024-03-04</lastmod>
          <changefreq>daily</changefreq>
