@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://sig-core.rocky.page/legacy/koji_tagging/">
+        <link rel="canonical" href="https://sig-core.rocky.page/rpm/">
       
       
-        <link rel="prev" href="../debrand_list/">
+        <link rel="prev" href="../legacy/koji_tagging/">
       
       
-        <link rel="next" href="../../rpm/">
+        <link rel="next" href="local_module_builds/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.12">
     
     
       
-        <title>Koji Tagging Strategy - Release Engineering (SIG/Core) Wiki</title>
+        <title>RPM - Release Engineering (SIG/Core) Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e359304.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e359304.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -75,11 +75,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#contact-information" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -92,9 +87,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Release Engineering (SIG/Core) Wiki" class="md-header__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
+    <a href=".." title="Release Engineering (SIG/Core) Wiki" class="md-header__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
       
-  <img src="../../assets/icon-white.svg" alt="logo">
+  <img src="../assets/icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Koji Tagging Strategy
+              RPM
             
           </span>
         </div>
@@ -228,9 +223,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Release Engineering (SIG/Core) Wiki" class="md-nav__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
+    <a href=".." title="Release Engineering (SIG/Core) Wiki" class="md-nav__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
       
-  <img src="../../assets/icon-white.svg" alt="logo">
+  <img src="../assets/icon-white.svg" alt="logo">
 
     </a>
     Release Engineering (SIG/Core) Wiki
@@ -257,7 +252,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../members/" class="md-nav__link">
+      <a href="../members/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,7 +292,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../what_we_do/" class="md-nav__link">
+      <a href="../what_we_do/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -352,7 +347,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/" class="md-nav__link">
+      <a href="../documentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +403,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/compose/" class="md-nav__link">
+      <a href="../documentation/compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +424,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/compose/koji/" class="md-nav__link">
+      <a href="../documentation/compose/koji/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -458,7 +453,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/empanadas/" class="md-nav__link">
+      <a href="../documentation/empanadas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -479,7 +474,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/peridot/" class="md-nav__link">
+      <a href="../documentation/peridot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -535,7 +530,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/" class="md-nav__link">
+      <a href="../documentation/references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -556,7 +551,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_common/" class="md-nav__link">
+      <a href="../documentation/references/empanadas_common/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -577,7 +572,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_config/" class="md-nav__link">
+      <a href="../documentation/references/empanadas_config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -598,7 +593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_sig_config/" class="md-nav__link">
+      <a href="../documentation/references/empanadas_sig_config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -669,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/" class="md-nav__link">
+      <a href="../sop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -690,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_release/" class="md-nav__link">
+      <a href="../sop/sop_release/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -711,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_8/" class="md-nav__link">
+      <a href="../sop/sop_compose_8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -732,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose/" class="md-nav__link">
+      <a href="../sop/sop_compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -753,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_sig/" class="md-nav__link">
+      <a href="../sop/sop_compose_sig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -774,7 +769,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
+      <a href="../sop/sop_upstream_prep_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -795,7 +790,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_mirrormanager2/" class="md-nav__link">
+      <a href="../sop/sop_mirrormanager2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -834,83 +829,11 @@
   
 
 
-  <h1>Koji Tagging Strategy</h1>
+  <h1>RPM</h1>
 
-<p>This document covers how the Rocky Linux Release Engineering Team handles the tagging for builds in Koji and how it affects the overall build process.</p>
-<h2 id="contact-information">Contact Information<a class="headerlink" href="#contact-information" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Owner</strong></td>
-<td>Release Engineering Team</td>
-</tr>
-<tr>
-<td><strong>Email Contact</strong></td>
-<td>releng@rockylinux.org</td>
-</tr>
-<tr>
-<td><strong>Mattermost Contacts</strong></td>
-<td><code>@label</code> <code>@mustafa</code> <code>@neil</code> <code>@tgo</code></td>
-</tr>
-<tr>
-<td><strong>Mattermost Channels</strong></td>
-<td><code>~Development</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="what-is-koji">What is Koji?<a class="headerlink" href="#what-is-koji" title="Permanent link">&para;</a></h2>
-<p>Koji is the build system used for Rocky Linux, as well as CentOS, Fedora, and likely others. Red Hat is likely to use a variant of Koji called "brew" with similar functionality and usage. Koji uses mock, a common RPM building utility, to build RPMs in a chroot environment.</p>
-<h2 id="architecture-of-koji">Architecture of Koji<a class="headerlink" href="#architecture-of-koji" title="Permanent link">&para;</a></h2>
-<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
-<p>Koji comprises of multiple components:</p>
-<ul>
-<li><code>koji-hub</code>, which is the center of all Koji operations. It runs XML-RPC and relies on other components to call it for actions. This piece will also talk to the database and is one component that has write access to the filesystem.</li>
-<li><code>kojid</code>, which is the daemon that runs on the builder nodes. It's responsibility is to talk to the hub for actions in which it can or has to perform, for example, building an RPM or install images. But that is not all that it can do.</li>
-<li><code>koji-web</code> is a set of scripts that provides the web interface that anyone can see at our <a href="https://kojidev.rockylinux.org">koji</a>.</li>
-<li><code>koji</code> is the command line utility that is commonly used - It is a wrapper of the various API commands that can be called. In our environment, it requires a login via kerberos.</li>
-<li><code>kojira</code> is a component that ensures repodata is updated among the build tags.</li>
-</ul>
-<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
-<p>Tags are the most important part of the koji ecosystem. With tags, you can have specific repository build roots for the entire distribution or just a simple subset of builds that should not polute the main build tags (for example, for SIGs where a package or two might be newer (or even older) than what's in BaseOS/AppStream.</p>
-<p>Using tags, you can setup what is called "inheritance". So for example. You can have a tag named <code>dist-rocky8-build</code> but it happens to inherit <code>dist-rocky8-updates-build</code>, which will likely have a newer set of packages than the former. Inheritance, in a way, can be considered setting "dnf priorities" if you've done that before. Another way to look at it is "ordering" and "what comes first".</p>
-<p>Targets call tags to send packages to build in, generally.</p>
-<h2 id="tag-strategy">Tag Strategy<a class="headerlink" href="#tag-strategy" title="Permanent link">&para;</a></h2>
-<p>The question that we get is "what's the difference between a build and an updates-build tag" - It's all about the inheritance. For example, let's take a look at <code>dist-rocky8-build</code></p>
-<div class="highlight"><pre><span></span><code>  dist-rocky8-build
-    el8
-    dist-rocky8
-    build-modules
-       . . .
-</code></pre></div>
-<p>In this tag, you can see that this build tag inherits el8 packages first, and then the packages in dist-rocky8, and then build-modules. This is where "base" packages start out at, generally and a lot of them won't be updated or even change with the lifecycle of the version.</p>
-<div class="highlight"><pre><span></span><code>dist-rocky8-updates-build
-    el8
-    dist-rocky8-updates
-        dist-rocky8
-    dist-rocky8-build
-        build-modules
-</code></pre></div>
-<p>This one is a bit different. Notice that it inherits el8 first, and then dist-rocky8-updates, which inherits dist-rocky8. And then it also pulls in dist-rocky8-build, the previous tag we were talking about. This tag is where updates for a minor release are sent to.</p>
-<div class="highlight"><pre><span></span><code>dist-rocky8_4-updates-build
-    el8_4
-    dist-rocky8-updates
-        dist-rocky8
-    dist-rocky8-build
-        el8
-        build-modules
-</code></pre></div>
-<p>Here's a more interesting one. Notice something? It's pretty similar to the last one, but see how it's named el8_4 instead? This is where updates during 8.4 are basically sent to and that's how they get tagged as <code>.el8_4</code> on the RPM's. The <code>el8_4</code> tag contains a build macros package that instructs the <code>%dist</code> tag to be set that way. When 8.5 comes out, we'll basically have the same setup.</p>
-<p>At the end of the day, builds that happen in these updates-build tags get dropped in dist-rocky8-updates.</p>
-<h3 id="what-about-modules">What about modules?<a class="headerlink" href="#what-about-modules" title="Permanent link">&para;</a></h3>
-<p>Modules are a bit tricky. We generally don't touch how MBS does its tags or what's going on there. When builds are being done with the modules, they do end up using the el8 packages in some manner or form. The modules are separated entirely from the main tags though, so they don't polute the main tags. You don't want a situation where say, you build the latest ruby, but something builds off the default version of ruby provided in <code>el8</code> and now you're in trouble and get dnf filtering issues.</p>
-<h3 id="how-do-we-determine-what-is-part-of-a-compose">How do we determine what is part of a compose?<a class="headerlink" href="#how-do-we-determine-what-is-part-of-a-compose" title="Permanent link">&para;</a></h3>
-<p>There are special tags that have a <code>-compose</code> suffix. These tags are used as a way to pull down packages for repository building during the pungi process.</p>
+<p>This section is primarily for documentation and useful information as it
+pertains to package building and modularity. Use the menu on the left side to
+find the information you're looking for.</p>
 
 
 
@@ -931,7 +854,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2024-03-04
+    2024-03-05
   </span>
 
     
@@ -982,10 +905,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c8d2eff1.min.js"></script>
+      <script src="../assets/javascripts/bundle.c8d2eff1.min.js"></script>
       
     
   </body>
