@@ -2,137 +2,162 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sig-core.rocky.page/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/members/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/what_we_do/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/empanadas/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/peridot/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/rebuild/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/compose/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/compose/koji/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/documentation/debranding/</loc>
+         <lastmod>2024-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/documentation/debranding/debrand_info/</loc>
+         <lastmod>2024-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/documentation/debranding/patching/</loc>
+         <lastmod>2024-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/documentation/guidelines/</loc>
+         <lastmod>2024-04-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://sig-core.rocky.page/documentation/guidelines/rocky_logos_guidelines/</loc>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/references/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/references/empanadas_common/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/references/empanadas_config/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/documentation/references/empanadas_sig_config/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/events/meeting-notes/2024-03-18/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/include/resources_bottom/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/legacy/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/legacy/debrand_list/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/legacy/koji_tagging/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/rpm/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/rpm/local_module_builds/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_compose/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_compose_8/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_compose_sig/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_mirrormanager2/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_release/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://sig-core.rocky.page/sop/sop_upstream_prep_checklist/</loc>
-         <lastmod>2024-03-18</lastmod>
+         <lastmod>2024-04-08</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
