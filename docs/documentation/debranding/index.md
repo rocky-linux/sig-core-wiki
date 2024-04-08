@@ -16,7 +16,7 @@ Rocky's method for importing packages from the upstream is a tool called **srpmp
 
 Srpmproc's purpose in life is to:
 
-- Clone PACKAGE from our upstream source: git.centos.org/rpms/PACKAGE or gitlab.com/redhat
+- Clone PACKAGE from our upstream source: gitlab.com/redhat or a relevant source RPM
 - Check if Rocky Linux has any debranding patches available for PACKAGE (under https://git.rockylinux.org/patch/PACKAGE)
 - If patch/PACKAGE exists, then read the configuration and patches from that repository and apply them
 - Commit the results (patched or not) to https://git.rockylinux.org/rpms/PACKAGE
