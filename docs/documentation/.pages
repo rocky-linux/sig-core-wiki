@@ -1,6 +1,7 @@
 ---
 nav:
   - ... | index.md
+  - Guidelines: guidelines
   - Composing Releases: compose
   - Empanadas: empanadas.md
   - Peridot: peridot.md
