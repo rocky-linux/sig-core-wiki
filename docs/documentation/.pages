@@ -2,6 +2,7 @@
 nav:
   - ... | index.md
   - Guidelines: guidelines
+  - Debranding and Patching: debranding
   - Composing Releases: compose
   - Empanadas: empanadas.md
   - Peridot: peridot.md

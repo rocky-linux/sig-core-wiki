@@ -13,7 +13,7 @@ Some of the things we do in pursuit of our mission goals:
 * Maintenance of the infrastructure used to build and maintain Rocky Linux (such as ansible roles and playbooks)
 * Working with the testing team with images and a platform to test
 * Providing resources for Special Interest Groups
-* Providing assistance and resources for users within the community
+* Providing assistance and resources for users within the community to meet their goals
 
 "Why the name SIG/Core?"
 
