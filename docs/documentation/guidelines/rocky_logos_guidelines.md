@@ -203,6 +203,9 @@ This section goes over the general guidelines for the main backgrounds included 
     * Avoid using the Rocky logo, unless it fits with an abstract/minimalist idea for the background
         * Plain backdrops with the rocky logo are *not* permitted
 
+* **Prohibited**:
+    * Any AI generated artwork
+
 #### Minimum Resolutions
 
 For general submissions, we require the highest resolution to make things simpler, that way the user should be able to use a wallpaper without having to choose "the right one" for their monitor size. However, for the case case of extra backgrounds, this requirement is more relaxed. If a submitter wishes not to use the highest resolution but opts to make multiple resolutions instead, they should follow the below list:
