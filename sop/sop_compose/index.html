@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.18">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.24">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.66ac8b77.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -1314,17 +1314,17 @@
 <h3 id="running-a-compose">Running a Compose<a class="headerlink" href="#running-a-compose" title="Permanent link">&para;</a></h3>
 <p>First, the toolkit must be cloned. In the <code>iso/empanadas</code> directory, run <code>poetry install</code>. You'll then have access to the various commands needed:</p>
 <ul>
-<li><code>sync_from_peridot</code></li>
+<li><code>sync-from-peridot</code></li>
 <li><code>build-iso</code></li>
 <li><code>build-iso-extra</code></li>
 <li><code>pull-unpack-tree</code></li>
 <li><code>pull-cloud-image</code></li>
-<li><code>finalize_compose</code></li>
+<li><code>finalize-compose</code></li>
 </ul>
 <h4 id="full-compose">Full Compose<a class="headerlink" href="#full-compose" title="Permanent link">&para;</a></h4>
 <p>To perform a full compose, this order is expected (replacing X with major version or config profile)</p>
 <div class="highlight"><pre><span></span><code># This creates a brand new directory under /mnt/compose/X and symlinks it to latest-Rocky-X
-poertry run sync_from_peridot --release X --hashed --repoclosure --full-run
+poertry run sync-from-peridot --release X --hashed --repoclosure --full-run
 
 # On each architecture, this must be ran to generate the lorax images
 # !! Use --rc if the image is a release candidate or a beta image
@@ -1346,13 +1346,13 @@ poetry run pull-cloud-image --release X
 # This ensures everything is closed out for a release. This copies iso&#39;s, images,
 # generates metadata, and the like.
 # !! DO NOT RUN DURING INCREMENTAL UPDATES !!
-poetry run finalize_compose --release X
+poetry run finalize-compose --release X
 </code></pre></div>
 <h4 id="incremental-compose">Incremental Compose<a class="headerlink" href="#incremental-compose" title="Permanent link">&para;</a></h4>
 <p>It is possible to simply compose singular repos if you know which ones you want to sync. This can be done when it's not for a brand new release.</p>
 <div class="highlight"><pre><span></span><code># Set your repos as desired. --arch is also acceptable.
 # --ignore-debug and --ignore-source are also acceptable options.
-poetry run sync_from_peridot --release X --hashed --clean-old-packages --repo X,Y,Z
+poetry run sync-from-peridot --release X --hashed --clean-old-packages --repo X,Y,Z
 </code></pre></div>
 <h2 id="syncing-composes">Syncing Composes<a class="headerlink" href="#syncing-composes" title="Permanent link">&para;</a></h2>
 <p>Syncing utilizes the sync scripts provided in the release engineering toolkit.</p>
@@ -1409,7 +1409,7 @@ bash sync-file-list-parallel.sh
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2024-01-25
+    2024-05-21
   </span>
 
     
@@ -1463,7 +1463,7 @@ bash sync-file-list-parallel.sh
     <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.3220b9d7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
