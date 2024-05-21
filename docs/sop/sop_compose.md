@@ -41,12 +41,12 @@ Each repository or set of repositories are controlled by various comps and pungi
 
 First, the toolkit must be cloned. In the `iso/empanadas` directory, run `poetry install`. You'll then have access to the various commands needed:
 
-* `sync_from_peridot`
+* `sync-from-peridot`
 * `build-iso`
 * `build-iso-extra`
 * `pull-unpack-tree`
 * `pull-cloud-image`
-* `finalize_compose`
+* `finalize-compose`
 
 #### Full Compose
 
@@ -54,7 +54,7 @@ To perform a full compose, this order is expected (replacing X with major versio
 
 ```
 # This creates a brand new directory under /mnt/compose/X and symlinks it to latest-Rocky-X
-poertry run sync_from_peridot --release X --hashed --repoclosure --full-run
+poertry run sync-from-peridot --release X --hashed --repoclosure --full-run
 
 # On each architecture, this must be ran to generate the lorax images
 # !! Use --rc if the image is a release candidate or a beta image
@@ -76,7 +76,7 @@ poetry run pull-cloud-image --release X
 # This ensures everything is closed out for a release. This copies iso's, images,
 # generates metadata, and the like.
 # !! DO NOT RUN DURING INCREMENTAL UPDATES !!
-poetry run finalize_compose --release X
+poetry run finalize-compose --release X
 ```
 
 #### Incremental Compose
@@ -86,7 +86,7 @@ It is possible to simply compose singular repos if you know which ones you want 
 ```
 # Set your repos as desired. --arch is also acceptable.
 # --ignore-debug and --ignore-source are also acceptable options.
-poetry run sync_from_peridot --release X --hashed --clean-old-packages --repo X,Y,Z
+poetry run sync-from-peridot --release X --hashed --clean-old-packages --repo X,Y,Z
 ```
 
 ## Syncing Composes

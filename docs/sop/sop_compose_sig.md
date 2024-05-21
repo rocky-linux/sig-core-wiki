@@ -31,16 +31,16 @@ Each repository or set of repositories are controlled by various comps and pungi
 
 First, the toolkit must be cloned. In the `iso/empanadas` directory, run `poetry install`. You'll then have access to the various commands needed:
 
-* `sync_sig`
+* `sync-sig`
 
 To perform a compose of a SIG, it must be defined in the configuration. As an example, here is composing the `core` sig.
 
 ```
 # This creates a brand new directory under /mnt/compose/X and symlinks it to latest-SIG-Y-X
-~/.local/bin/poetry run sync_sig --release 9 --sig core --hashed --clean-old-packages --full-run
+~/.local/bin/poetry run sync-sig --release 9 --sig core --hashed --clean-old-packages --full-run
 
 # This assumes the directories already exist and will update in place.
-~/.local/bin/poetry run sync_sig --release 9 --sig core --hashed --clean-old-packages
+~/.local/bin/poetry run sync-sig --release 9 --sig core --hashed --clean-old-packages
 ```
 
 ## Syncing Composes
