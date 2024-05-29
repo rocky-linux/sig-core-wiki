@@ -104,6 +104,22 @@ required: False
 
 description: For future use with icicle.
 
+### gpg_key
+
+type: List
+
+required: False
+
+description: List of GPG keys for a given repository
+
+### repo_gpg_key
+
+type: List
+
+required: False
+
+description: List of GPG keys for a given repository. Use this if the signing key for the repo is different from packages.
+
 ### allowed_arches
 
 type: list
@@ -612,9 +628,6 @@ ISO images if applicable.
     git_repo: 'https://git.rockylinux.org/staging/src/rocky-release.git'
     git_raw_path: 'https://git.rockylinux.org/staging/src/rocky-release/-/raw/r9/'
     branch: 'r9'
-    gpg:
-      stable: 'SOURCES/RPM-GPG-KEY-Rocky-9'
-      testing: 'SOURCES/RPM-GPG-KEY-Rocky-9-Testing'
     list:
       - 'SOURCES/Contributors'
       - 'SOURCES/COMMUNITY-CHARTER'
