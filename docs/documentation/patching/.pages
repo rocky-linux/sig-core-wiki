@@ -1,5 +1,5 @@
 ---
 nav:
   - ... | index.md
-  - Debranding Information: debrand_info.md
+  - Package Changes: changes.md
   - Patching Guide: patching.md

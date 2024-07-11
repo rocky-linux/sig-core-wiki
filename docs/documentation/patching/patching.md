@@ -1,6 +1,9 @@
 ---
-title: Rocky Patching Guide
+title: Rocky Linux Patching Guide
 ---
+
+!!! note
+    This page is kept here as a historical reference and may be out of date.
 
 This explains how to debrand/patch a package for the Rocky Linux distribution.
 
