@@ -36,7 +36,7 @@ These do not happen often. These types of changes do not affect the compatibilit
 
 ## What type of other changes can be done?
 
-There are very rare cases where Red Hat completely disables a package from being built or even being provided. In these very rare cases, if there is user demand, we may ensure these packages are built or provided in some way. A very common example is `openldap-servers`, which is no longer built by default. However, we enable this and provide it in our `plus` repository.
+There are very rare cases where Red Hat completely disables a package from being built or even being provided. In these very rare cases, if there is user demand, we may ensure these packages are built or provided in some way. A very common example is `openldap-servers`, which is no longer built by default. There are a couple of packages that for some reason also *rely* on openldap-server's existence. As a result, we enable this and provide it in our `plus` repository.
 
 ## Can I get a list of changes?
 
