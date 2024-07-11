@@ -10,28 +10,28 @@
       
       
       
-        <link rel="canonical" href="https://sig-core.rocky.page/legacy/debrand_list/">
+        <link rel="canonical" href="https://sig-core.rocky.page/documentation/patching/patching/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../changes/">
       
       
-        <link rel="next" href="../koji_tagging/">
+        <link rel="next" href="../../compose/">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
-        <title>Rocky Debrand Packages List - Release Engineering (SIG/Core) Wiki</title>
+        <title>Rocky Linux Patching Guide - Release Engineering (SIG/Core) Wiki</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,7 +50,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#packages-that-need-debranding-changes" class="md-skip">
+        <a href="#general-instructions" class="md-skip">
           Skip to content
         </a>
       
@@ -92,9 +92,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Release Engineering (SIG/Core) Wiki" class="md-header__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
+    <a href="../../.." title="Release Engineering (SIG/Core) Wiki" class="md-header__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
       
-  <img src="../../assets/icon-white.svg" alt="logo">
+  <img src="../../../assets/icon-white.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Rocky Debrand Packages List
+              Rocky Linux Patching Guide
             
           </span>
         </div>
@@ -228,9 +228,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Release Engineering (SIG/Core) Wiki" class="md-nav__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
+    <a href="../../.." title="Release Engineering (SIG/Core) Wiki" class="md-nav__button md-logo" aria-label="Release Engineering (SIG/Core) Wiki" data-md-component="logo">
       
-  <img src="../../assets/icon-white.svg" alt="logo">
+  <img src="../../../assets/icon-white.svg" alt="logo">
 
     </a>
     Release Engineering (SIG/Core) Wiki
@@ -257,7 +257,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../members/" class="md-nav__link">
+      <a href="../../../members/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,7 +297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../what_we_do/" class="md-nav__link">
+      <a href="../../../what_we_do/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -314,17 +314,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
@@ -338,7 +340,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Documentation
@@ -352,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/" class="md-nav__link">
+      <a href="../../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -408,7 +410,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidelines/" class="md-nav__link">
+      <a href="../../guidelines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -429,7 +431,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/guidelines/rocky_logos_guidelines/" class="md-nav__link">
+      <a href="../../guidelines/rocky_logos_guidelines/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -455,17 +457,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" checked>
         
           
           <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
@@ -479,7 +483,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4_3">
             <span class="md-nav__icon md-icon"></span>
             Package Patching
@@ -493,7 +497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/patching/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -514,7 +518,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/patching/changes/" class="md-nav__link">
+      <a href="../changes/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -532,10 +536,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../documentation/patching/patching/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Patching Guide
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -544,6 +566,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#general-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      General Instructions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-patch-config-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Patch Config Language
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#patch-configuration-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patch configuration options
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#case-study-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      Case Study: Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#more-debrand-config-language" class="md-nav__link">
+    <span class="md-ellipsis">
+      More Debrand Config Language
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,7 +684,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/compose/" class="md-nav__link">
+      <a href="../../compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -620,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/compose/koji/" class="md-nav__link">
+      <a href="../../compose/koji/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -649,7 +734,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/empanadas/" class="md-nav__link">
+      <a href="../../empanadas/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -670,7 +755,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/peridot/" class="md-nav__link">
+      <a href="../../peridot/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -726,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/" class="md-nav__link">
+      <a href="../../references/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -747,7 +832,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_common/" class="md-nav__link">
+      <a href="../../references/empanadas_common/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -768,7 +853,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_config/" class="md-nav__link">
+      <a href="../../references/empanadas_config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -789,7 +874,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../documentation/references/empanadas_sig_config/" class="md-nav__link">
+      <a href="../../references/empanadas_sig_config/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -860,7 +945,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/" class="md-nav__link">
+      <a href="../../../sop/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -881,7 +966,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_release/" class="md-nav__link">
+      <a href="../../../sop/sop_release/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -902,7 +987,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_8/" class="md-nav__link">
+      <a href="../../../sop/sop_compose_8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -923,7 +1008,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose/" class="md-nav__link">
+      <a href="../../../sop/sop_compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -944,7 +1029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_sig/" class="md-nav__link">
+      <a href="../../../sop/sop_compose_sig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -965,7 +1050,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
+      <a href="../../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -986,7 +1071,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_mirrormanager2/" class="md-nav__link">
+      <a href="../../../sop/sop_mirrormanager2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../events/meeting-notes/2024-03-18/" class="md-nav__link">
+      <a href="../../../events/meeting-notes/2024-03-18/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1131,263 +1216,181 @@
   
 
 
-  <h1>Rocky Debrand Packages List</h1>
+  <h1>Patching Guide</h1>
 
-<p>This is a list of packages that require changes to their material for acceptance in Rocky Linux.  Usually this means there is some text or images in the package that reference upstream trademarks, and these must be swapped out before we can distribute them.</p>
-<p>The first items in this list are referenced from the excellent CentOS release notes here:  https://wiki.centos.org/Manuals/ReleaseNotes/CentOS8.1905#Packages_modified_by_CentOS</p>
-<p>It is assumed that we will have to modify these same packages.  It is also assumed that these changed packages might not necessarily be debranding.</p>
-<p>However, this list is incomplete.  For example, the package <strong>Nginx</strong> does not appear on the list, and still has RHEL branding in the CentOS repos.  We will need to investigate the rest of the package set and find any more packages like this that we must modify.</p>
-<p>One way to find said changes is to look for <code>?centos</code> tags in the SPEC file, while also looking at the manual debranding if there was any for the <code>c8</code> branches.</p>
-<p>There will be cases where a search and replace for <code>?centos</code> to <code>?rocky</code> will be sufficient.</p>
-<p>Current patches (for staging) are <a href="https://git.rockylinux.org/staging/patch">here</a>.</p>
-<h2 id="packages-that-need-debranding-changes">Packages that need debranding changes:<a class="headerlink" href="#packages-that-need-debranding-changes" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Package</th>
-<th>Notes</th>
-<th>Work Status</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">abrt</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/abrt">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">anaconda</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/anaconda">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">apache-commons-net</td>
-<td>AppStream module with elevating branch names</td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">~~basesystem~~</td>
-<td>(does not require debranding, it is a skeleton package)</td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">cloud-init</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/cloud-init">here</a></td>
-<td><strong>DONE</strong> - NEEDS REVIEW IN GITLAB (Rich Alloway)</td>
-</tr>
-<tr>
-<td style="text-align: left;">cockpit</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/cockpit">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">~~compat-glibc~~</td>
-<td></td>
-<td>NOT IN EL 8</td>
-</tr>
-<tr>
-<td style="text-align: left;">dhcp</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/dhcp">here</a></td>
-<td><strong>DONE</strong>, NEEDS REVIEW IN GITLAB (Rich Alloway)</td>
-</tr>
-<tr>
-<td style="text-align: left;">firefox</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/firefox">here</a> -- Still requires a distribution.ini ID</td>
-<td><strong>MOSTLY DONE</strong> (Louis)</td>
-</tr>
-<tr>
-<td style="text-align: left;">fwupdate</td>
-<td></td>
-<td>NOT STARTED</td>
-</tr>
-<tr>
-<td style="text-align: left;">glusterfs</td>
-<td>Changes don't appear to be required</td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">gnome-settings-daemon</td>
-<td>No changes required for now.</td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">grub2</td>
-<td>(secureboot patches not done, just debrand) See <a href="https://git.rockylinux.org/staging/patch/grub2">here</a></td>
-<td><strong>DONE</strong>, NEEDS REVIEW IN GITLAB AND SECUREBOOT (Rich Alloway)</td>
-</tr>
-<tr>
-<td style="text-align: left;">httpd</td>
-<td>See <a href="https://git.centos.org/rpms/httpd/c/2f74eecf85362e67c403b7b1386a729da3e5c33d?branch=c8-stream-2.4">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">initial-setup</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/initial-setup">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">ipa</td>
-<td>This is a dual change: Logos and ipaplatform. Logos are taken care of in <code>rocky-logos</code> and the <code>ipaplatform</code> is taken care of here. See <a href="https://git.rockylinux.org/staging/patch/ipa">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">~~kabi-yum-plugins~~</td>
-<td></td>
-<td>NOT IN EL 8</td>
-</tr>
-<tr>
-<td style="text-align: left;">kernel</td>
-<td>See <a href="https://git.centos.org/rpms/kernel/c/20287bd53a5c2e87db2470380271b72ac8a1ed59?branch=c8">here</a> for a potential example</td>
-<td>NOT STARTED</td>
-</tr>
-<tr>
-<td style="text-align: left;">~~kde-settings~~</td>
-<td></td>
-<td>NOT IN EL 8</td>
-</tr>
-<tr>
-<td style="text-align: left;">libreport</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/libreport">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">oscap-anaconda-addon</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/oscap-anaconda-addon">here</a></td>
-<td><strong>DONE</strong> Requires install QA</td>
-</tr>
-<tr>
-<td style="text-align: left;">PackageKit</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/PackageKit">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">~~pcs~~</td>
-<td></td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">plymouth</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/plymouth">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">~~redhat-lsb~~</td>
-<td></td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">redhat-rpm-config</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/redhat-rpm-config">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">scap-security-guide</td>
-<td>QA is likely required to test this package as it is</td>
-<td>NO CHANGES REQUIRED, QA REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;">shim</td>
-<td></td>
-<td>NOT STARTED</td>
-</tr>
-<tr>
-<td style="text-align: left;">shim-signed</td>
-<td></td>
-<td>NOT STARTED</td>
-</tr>
-<tr>
-<td style="text-align: left;">sos</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/sos">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">subscription-manager</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/subscription-manager">here</a></td>
-<td><strong>DONE</strong>, NEEDS REVIEW</td>
-</tr>
-<tr>
-<td style="text-align: left;">~~system-config-date~~</td>
-<td></td>
-<td>NOT IN EL8</td>
-</tr>
-<tr>
-<td style="text-align: left;">~~system-config-kdump~~</td>
-<td></td>
-<td>NOT IN EL8</td>
-</tr>
-<tr>
-<td style="text-align: left;">thunderbird</td>
-<td>See <a href="https://git.rockylinux.org/staging/patch/thunderbird">here</a></td>
-<td><strong>DONE</strong></td>
-</tr>
-<tr>
-<td style="text-align: left;">~~xulrunner~~</td>
-<td></td>
-<td>NOT IN EL 8</td>
-</tr>
-<tr>
-<td style="text-align: left;">~~yum~~</td>
-<td></td>
-<td>NO CHANGES REQUIRED</td>
-</tr>
-<tr>
-<td style="text-align: left;"><strong>(end of CentOS list)</strong></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td style="text-align: left;">nginx</td>
-<td>Identified changes, in staging</td>
-<td>(ALMOST) <strong>DONE</strong></td>
-</tr>
-</tbody>
-</table>
-<h2 id="packages-that-need-to-become-other-packages">Packages that need to become other packages:<a class="headerlink" href="#packages-that-need-to-become-other-packages" title="Permanent link">&para;</a></h2>
-<p>We will want to create our own versions of these packages.  The full "lineage" is shown, from RHEL -&gt; CentOS -&gt; Rocky (Where applicable)</p>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">Package</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;">redhat-indexhtml -&gt; centos-indexhtml -&gt; rocky-indexhtml</td>
-<td><a href="https://git.rockylinux.org/original/rpms/rocky-indexhtml">Here</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">redhat-logos -&gt; centos-logos -&gt; rocky-logos</td>
-<td><a href="https://git.rockylinux.org/original/rpms/rocky-logos">Here</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">redhat-release-*  -&gt; centos-release -&gt; rocky-release</td>
-<td><a href="https://git.rockylinux.org/original/rpms/rocky-release">Here</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">centos-backgrounds -&gt; rocky-backgrounds</td>
-<td>Provided by <a href="https://git.rockylinux.org/original/rpms/rocky-logos">logos</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">centos-linux-repos -&gt; rocky-repos</td>
-<td><a href="https://git.rockylinux.org/original/rpms/rocky-repos">Here</a></td>
-</tr>
-<tr>
-<td style="text-align: left;">centos-obsolete-packages</td>
-<td><a href="https://git.rockylinux.org/original/rpms/rocky-obsolete-packages">Here</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="packages-that-exist-in-rhel-but-not-in-centos">Packages that Exist in RHEL, but not in CentOS<a class="headerlink" href="#packages-that-exist-in-rhel-but-not-in-centos" title="Permanent link">&para;</a></h2>
-<p>For sake of complete information, here is a list of packages that are in RHEL 8, but do not exist in CentOS 8.  We do not need to worry about these packages:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This page is kept here as a historical reference and may be out of date.</p>
+</div>
+<p>This explains how to debrand/patch a package for the Rocky Linux distribution.</p>
+<h2 id="general-instructions">General Instructions<a class="headerlink" href="#general-instructions" title="Permanent link">&para;</a></h2>
 <ul>
-<li>insights-client</li>
-<li>Red_Hat_Enterprise_Linux-Release_Notes-8-*</li>
-<li>redhat-access-gui</li>
-<li>redhat-bookmarks</li>
-<li>subscription-manager-migration</li>
-<li>subscription-manager-migration-data</li>
+<li>First, identify the files in the package that need to be changed.  They could be text files, image files, or others.  You can identify the file(s) by digging into git.centos.org/rpms/PACKAGE/</li>
+<li>Develop replacements for these files, but with Rocky branding placed instead.  Diff/patch files may be needed as well for certain types of text, depends on the content being replaced.</li>
+<li>Replacement files go under https://git.rockylinux.org/patch/PACKAGE/ROCKY/_supporting/</li>
+<li>Config file (specifying how to apply the patches) goes in https://git.rockylinux.org/patch/PACKAGE/ROCKY/CFG/*.cfg</li>
+<li>Note: Use spaces, not tabs.</li>
+<li>When srpmproc goes to import the package to Rocky, it will see the work done in https://git.rockylinux.org/patch/PACKAGE , and apply the stored patches by reading the config file(s) under ROCKY/CFG/*.cfg</li>
 </ul>
+<h2 id="the-patch-config-language">The Patch Config Language<a class="headerlink" href="#the-patch-config-language" title="Permanent link">&para;</a></h2>
+<p>Patching uses simple proto3 config files.  The general format is:
+<div class="highlight"><pre><span></span><code>Action {
+    file: &quot;OriginalFile&quot;
+    with_file: &quot;ROCKY/_supporting/RockyReplaceFile&quot;
+}
+</code></pre></div></p>
+<p>A simple example to replace a file:
+<div class="highlight"><pre><span></span><code>replace {
+    file: &quot;redhatlogo.png&quot;
+    with_file: &quot;ROCKY/_supporting/rockylogo.png&quot;
+}
+</code></pre></div></p>
+<p>The file "redhatlogo.png" would be located in under SOURCES/ in the project's Git repository (and SRPM).</p>
+<h2 id="patch-configuration-options">Patch configuration options<a class="headerlink" href="#patch-configuration-options" title="Permanent link">&para;</a></h2>
+<ul>
+<li><code>add</code>: Adds a file to the sources using the <code>file</code> or <code>lookaside</code> directive</li>
+<li><code>delete</code>: Deletes a file from the sources using the <code>file</code> directive</li>
+<li><code>replace</code>: Replaces a file from the sources using the <code>file</code> and <code>with_file</code> directives</li>
+<li><code>patch</code>: Performs a patch based on the diff provided in the <code>file</code> directive (generated using <code>git diff</code>)</li>
+<li><code>spec_change</code>: Allows for spec files to be modified</li>
+<li><code>search_and_replace</code>: Performs a search and replace on a given text for the spec file using the <code>any/starts_with/ends_with</code> (true|false), <code>find</code> (string to find), <code>replace</code> (replacement string), and <code>n</code> (integar, <code>-1</code> for any) directives.</li>
+<li><code>file</code>: A file can be added to the spec file using the <code>name</code> directive to define the file name, the <code>type</code> directive (such as <code>patch</code>) and then an <code>add</code> option that is <code>true</code> or <code>false</code><ul>
+<li>When <code>patch</code> is used, the following options are available:</li>
+<li><code>add_to_prep</code> (true|false)</li>
+<li><code>n_path: N</code> can be specified to add <code>%patchX -pN</code> lines into <code>%prep</code> assuming the rpm does not use <code>%autosetup</code></li>
+</ul>
+</li>
+<li><code>append</code>: Appends to a given <code>field</code>, such as <code>Release</code> with a <code>value</code> directive</li>
+<li><code>changelog</code>: Modifies the change log using <code>author_name</code>, <code>author_email</code>, and <code>message</code> directives</li>
+</ul>
+<p>Patch configuration structure:</p>
+<div class="highlight"><pre><span></span><code>.
+└── ROCKY
+    ├── CFG
+    └── _supporting
+</code></pre></div>
+<h2 id="case-study-nginx">Case Study: Nginx<a class="headerlink" href="#case-study-nginx" title="Permanent link">&para;</a></h2>
+<p><strong>(note: all example data here is currently in the staging/ area of Rocky Linux Git.  We will update it when the projects are moved to the production area)</strong></p>
+<p>Let's go over an example debrand, featuring the Nginx web server package.</p>
+<p>The source repository is located here: <strong>https://git.centos.org/rpms/nginx</strong></p>
+<p>If we browse one of the c8-* branches, we see under SOURCES/ that there is definitely some content that needs to be debranded:</p>
+<div class="highlight"><pre><span></span><code>404.html
+50x.html
+index.html
+poweredby.png  (binary file in dist-git, referred to in .nginx.metadata)
+</code></pre></div>
+<p>These files all refer to Red Hat inc., and must be replaced before they make it to Rocky Linux.</p>
+<p><strong>1: Come up with the patches:</strong>  Each of these files has a Rocky Linux counterpart, and they must be created.  <strong>Some of this should be done by the Design Team, especially logo work (#Design on chat)</strong></p>
+<p><strong>2: Commit patches to the matching patch/PROJECT Git repository</strong> : For example, Nginx patches are located here: <strong>https://git.rockylinux.org/staging/patch/nginx</strong> (staging/ prefix is currently used until our production repos are set up)</p>
+<p><strong>3: Develop a matching config file:</strong> Our example Nginx has this here:  <strong>https://git.rockylinux.org/staging/patch/nginx/-/blob/main/ROCKY/CFG/pages.cfg</strong></p>
+<p>It looks like this:
+<div class="highlight"><pre><span></span><code>replace {
+    file: &quot;index.html&quot;
+    with_file: &quot;ROCKY/_supporting/index.html&quot;
+}
+
+replace {
+    file: &quot;404.html&quot;
+    with_file: &quot;ROCKY/_supporting/404.html&quot;
+}
+
+replace {
+    file: &quot;50x.html&quot;
+    with_file: &quot;ROCKY/_supporting/50x.html&quot;
+}
+
+replace {
+    file: &quot;poweredby.png&quot;
+    with_file: &quot;ROCKY/_supporting/poweredby.png&quot;
+}
+</code></pre></div></p>
+<p><strong>4: Test the import:</strong> Now, when the upstream is imported, we can check the main Rocky <strong>nginx</strong>  repository and ensure our updates were successful:  <strong>https://git.rockylinux.org/staging/rpms/nginx/</strong> (again, staging/ group is used only for now)</p>
+<p><strong>5: You're Done!</strong>  Great!  Now do the next one...  ;-)</p>
+<h2 id="more-debrand-config-language">More Debrand Config Language<a class="headerlink" href="#more-debrand-config-language" title="Permanent link">&para;</a></h2>
+<p>The Nginx example showed just the <strong>replace</strong> directive, but there are several more available.  They are <strong>add</strong>, <strong>patch</strong>, and <strong>delete.</strong></p>
+<p>Here they are, with examples:</p>
+<div class="highlight"><pre><span></span><code># Add a file to the project (file is added to SOURCES/ folder )
+add {
+    file: &quot;ROCKY/_supporting/add_me.txt&quot;
+}
+
+# Apply a .patch file (generated using the Linux &quot;patch&quot; utility)
+patch {
+    file: &quot;ROCKY/_supporting/002-test-html.patch&quot;
+}
+
+# Delete a file from the source project
+delete {
+    file: &quot;SOURCES/dontneed.txt&quot;
+}
+</code></pre></div>
+<p>And the .patch file example looks like this:
+<div class="highlight"><pre><span></span><code>diff --git a/SOURCES/test.html b/SOURCES/test.html
+index 8d91ffd..3f76c3b 100644
+--- a/SOURCES/test.html
++++ b/SOURCES/test.html
+@@ -1,6 +1,6 @@
+ &lt;!DOCTYPE html&gt;
+ &lt;html&gt;
+     &lt;body&gt;
+-        &lt;h1&gt;Replace me&lt;/h1&gt;
++        &lt;h1&gt;Replace I did!&lt;/h1&gt;
+     &lt;/body&gt;
+ &lt;/html&gt;
+</code></pre></div></p>
+<p>It also supports spec file changes, as it may be necessary. For example, from the anaconda debrand patch repo.</p>
+<div class="highlight"><pre><span></span><code>add {
+    file: &quot;ROCKY/_supporting/0002-Rocky-disable-cdn-radiobutton.patch&quot;
+}
+
+spec_change {
+    # Adds a Patch line with the file name as listed above
+    file {
+        name: &quot;0002-Rocky-disable-cdn-radiobutton.patch&quot;
+        type: Patch
+        add: true
+    }
+
+    # Appends to the end of a field&#39;s line, in this case the Release field gets .rocky
+    append {
+        field: &quot;Release&quot;
+        value: &quot;.rocky&quot;
+    }
+
+    # Adds to the change log properly
+    changelog {
+        author_name: &quot;Mustafa Gezen&quot;
+        author_email: &quot;mustafa@rockylinux.org&quot;
+        message: &quot;Disable CDN and add .rocky to Release&quot;
+    }
+}
+</code></pre></div>
+<p>At the end, the spec file should be changed.</p>
+<div class="highlight"><pre><span></span><code>Summary:              Graphical system installer
+Name:                 anaconda
+Version:              33.16.3.26
+                      # Our .rocky appears here
+Release:              2%{?dist}.rocky
+
+-- snip --
+
+Patch1:               0001-network-do-not-crash-on-infiniband-devices-activated.patch
+                      # Look, our patch was added!
+                      # Luckily this RPM uses %autosetup, so no %patch lines
+Patch2:               0002-Rocky-disable-cdn-radiobutton.patch
+
+-- snip --
+
+# And below the added changelog
+%changelog
+* Thu Feb 25 2021 Mustafa Gezen &lt;mustafa@rockylinux.org&gt; - 33.16.3.26-2
+- Disable CDN and add .rocky to Release
+
+* Thu Oct 22 2020 Radek Vykydal &lt;rvykydal@redhat.com&gt; - 33.16.3.26-2
+- network: do not crash on infiniband devices activated in initramfs
+  (rvykydal)
+  Resolves: rhbz#1890261
+</code></pre></div>
 
 
 
@@ -1408,7 +1411,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    2024-03-04
+    2024-07-10
   </span>
 
     
@@ -1459,10 +1462,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.highlight", "search.suggest", "toc.integrate"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
     
   </body>
