@@ -9,14 +9,14 @@
     | grub2                 | Patch           | Secure Boot                                         |
     | kernel                | Patch, Branding | Secure Boot                                         |
     | kernel-rt             | Patch, Branding | Secure Boot                                         |
-    | rocky-release         | Self-managed    | Required for Rocky Linux to be itself                   |
-    | rocky-logos           | Self-managed    | Required for Rocky Linux assets                         |
-    | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                  |
-    | rocky-bookmarks       | Self-managed    | Required for Rocky Linux default browser bookmarks      |
-    | abrt                  | Branding        | Add Rocky Support                                   |
+    | rocky-release         | Self-managed    | Required for Rocky Linux to be itself               |
+    | rocky-logos           | Self-managed    | Required for Rocky Linux assets                     |
+    | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index              |
+    | rocky-bookmarks       | Self-managed    | Required for Rocky Linux default browser bookmarks  |
+    | abrt                  | Patch           | Add Rocky Support                                   |
     | anaconda              | Patch, Branding | Turn off Red Hat specific options                   |
-    | anaconda-user-help    | Branding        | Ensure documenation references Rocky Linux          |
-    | cockpit-composer      | Branding        | Replace RHEL with Enterprise Linux                  |
+    | anaconda-user-help    | Patch, Branding | Ensure documenation references Rocky Linux          |
+    | cockpit-composer      | Patch, Branding | Replace RHEL with Enterprise Linux                  |
     | cloud-init            | Patch           | Ensure the managed user is cloud-user like upstream |
     | crash                 | Patch           | Replace Red Hat with Rocky                          |
     | dhcp                  | Patch           | Change bug tracker URL                              |
@@ -73,7 +73,7 @@
     | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                  |
     | rocky-bookmarks       | Self-managed    | Required for Rocky Linux default browser bookmarks      |
     | anaconda              | Patch, Branding | Turn off Red Hat specific options                       |
-    | anaconda-user-help    | Branding        | Ensure documenation references Rocky Linux              |
+    | anaconda-user-help    | Patch, Branding | Ensure documenation references Rocky Linux              |
     | cloud-init            | Patch           | Ensure the managed user is cloud-user like upstream     |
     | cockpit-composer      | Branding        | Replace RHEL with Enterprise Linux                      |
     | crash                 | Patch           | Replace Red Hat with Rocky                              |
@@ -124,7 +124,7 @@
     | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                      |
     | rocky-bookmarks       | Self-managed    | Required for Rocky Linux default browser bookmarks          |
     | anaconda              | Patch, Branding | Turn off Red Hat specific options                           |
-    | anaconda-user-help    | Branding        | Ensure documenation references Rocky Linux                  |
+    | anaconda-user-help    | Patch, Branding | Ensure documenation references Rocky Linux                  |
     | cloud-init            | Patch           | Ensure the managed user is cloud-user like upstream         |
     | cockpit-composer      | Branding        | Replace RHEL with Enterprise Linux                          |
     | crash                 | Patch           | Replace Red Hat with Rocky                                  |
