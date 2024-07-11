@@ -66,6 +66,8 @@
     | shim                  | Self-managed    | Secure Boot                                             |
     | fwupd                 | Patch           | Secure Boot                                             |
     | grub2                 | Patch           | Secure Boot                                             |
+    | kernel                | Patch, Branding | Secure Boot                                             |
+    | kernel-rt             | Patch, Branding | Secure Boot                                             |
     | rocky-release         | Self-managed    | Required for Rocky Linux to be itself                   |
     | rocky-logos           | Self-managed    | Required for Rocky Linux assets                         |
     | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                  |
@@ -86,8 +88,6 @@
     | java-11-openjdk*      | Patch           | Ensure portables are buildable on all releases          |
     | java-17-openjdk*      | Patch           | Ensure portables are buildable on all releases          |
     | java-21-openjdk*      | Patch           | Ensure portables are buildable on all releases          |
-    | kernel                | Patch, Branding | Secure Boot                                             |
-    | kernel-rt             | Patch, Branding | Secure Boot                                             |
     | libdnf                | Patch           | Change bug tracker URL                                  |
     | libreoffice           | Branding        | Remove Red Hat branding to generic branding             |
     | libreport             | Patch           | Ensure Rocky Bug Tracker (mantis) is supported          |
