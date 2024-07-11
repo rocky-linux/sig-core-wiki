@@ -1251,7 +1251,7 @@
 </ul>
 <p>These do not happen often. These types of changes do not affect the compatibility of the packages to our upstream.</p>
 <h2 id="what-type-of-other-changes-can-be-done">What type of other changes can be done?<a class="headerlink" href="#what-type-of-other-changes-can-be-done" title="Permanent link">&para;</a></h2>
-<p>There are very rare cases where Red Hat completely disables a package from being built or even being provided. In these very rare cases, if there is user demand, we may ensure these packages are built or provided in some way. A very common example is <code>openldap-servers</code>, which is no longer built by default. However, we enable this and provide it in our <code>plus</code> repository.</p>
+<p>There are very rare cases where Red Hat completely disables a package from being built or even being provided. In these very rare cases, if there is user demand, we may ensure these packages are built or provided in some way. A very common example is <code>openldap-servers</code>, which is no longer built by default. There are a couple of packages that for some reason also <em>rely</em> on openldap-server's existence. As a result, we enable this and provide it in our <code>plus</code> repository.</p>
 <h2 id="can-i-get-a-list-of-changes">Can I get a list of changes?<a class="headerlink" href="#can-i-get-a-list-of-changes" title="Permanent link">&para;</a></h2>
 <p>Of course, head to the <a href="changes/">changes</a> page for a list of known and documented changes that we make to our packages.</p>
 
