@@ -1,6 +1,6 @@
 ---
 title: Local Module Builds
-ignore_macros: true
+render_macros: false
 ---
 
 Within the Fedora and Red Hat ecosystem, modularity is unfortunately a piece
