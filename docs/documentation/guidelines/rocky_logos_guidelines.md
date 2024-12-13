@@ -182,13 +182,22 @@ This section goes over the general guidelines for the main backgrounds included 
 
 **Note**: It is **highly recommended and encouraged** that a submission should be the highest resolution as noted below. See the [note](#minimum-resolutions) on minimum resolutions.
 
-* **General Theme**: Each Rocky release has a codename, and thus is the general theme. Examples.
-    * Rocky 8: `Green Obsidian` - Submissions only to extras
-    * Rocky 9: `Blue Onyx` - This should be generally a blue theme/color scheme. Submissions only to extras.
-    * Rocky 10: `Red Quartz` - This should be generally a red-like theme/color scheme
-* **Required Resolution(s) for Normal Submissions**:
-    * Resolution must **not** fall below: 3072x3072
-    * Example resolutions: 4800x3600, 4096x3072, 3440x3440
+#### General Theme
+
+Each Rocky release has a codename, and thus is the general theme. Examples.
+
+* Rocky 8: `Green Obsidian` - Submissions only to extras
+* Rocky 9: `Blue Onyx` - This should be generally a blue theme/color scheme. Submissions only to extras.
+* Rocky 10: `Red Quartz` - This should be generally a red-like theme/color scheme
+
+#### Required Resolutions for Normal Submissions
+
+We request a high resolution to make things simpler for users to choose which they'd like and how they want it to display on their system (e.g. "wide", "center", others).
+
+* Resolution must **not** fall below: 3072x3072
+* Example resolutions: 4800x3600, 4096x3072, 3440x3440
+
+#### Content Guidelines
 
 * **Allowed**:
     * Anything related to nature, mountains, rocks, and the like (generally fitting into the "rocky" idea)
@@ -207,9 +216,13 @@ This section goes over the general guidelines for the main backgrounds included 
 * **Prohibited**:
     * Any AI generated artwork
 
-#### Minimum Resolutions
+### Extras Package
 
-For general submissions, we request a high resolution to make things simpler, that way the user should be able to use a wallpaper without having to choose "the right one" for their monitor size. This requirement is more relaxed for the extra backgrounds package. If a submitter wishes not to use the highest resolution but opts to make multiple resolutions instead, they should use the below list as a general guideline:
+If a wallpaper does not make it to the main package, is simply Rocky inspired, or was simply submitted as an "extra" background, it has the opportunity to be placed into the rocky-backgrounds-extras package. The requirements are more relaxed for the extra backgrounds.
+
+#### Minimum Resolutions for Extra Backgrounds
+
+For general submissions, we request a high resolution to make things simpler, that way the user is able to choose a wallpaper without having to choose "the right one" for their monitor size. This requirement is more relaxed for the extra backgrounds package. If a submitter wishes not to use the highest resolution but opts to make multiple resolutions instead, they should use the below list as a general guideline:
 
 * **Minimum Required Resolutions**:
     * 16:9 (1920x1080)
@@ -226,6 +239,3 @@ For general submissions, we request a high resolution to make things simpler, th
 
 The placeholders in [this commit](https://github.com/rocky-linux/rocky-logos/tree/962a836f70a131faa541a4f8f73a4a3fddfc3dbf/backgrounds) shows an example of using the minimum resolutions.
 
-### Extras Package
-
-If a wallpaper does not make it to the main package (whether it doesn't meet guidelines or is simply just Rocky inspired), they should be able to be submitted for addition into the `rocky-backgrounds-extras` package.
