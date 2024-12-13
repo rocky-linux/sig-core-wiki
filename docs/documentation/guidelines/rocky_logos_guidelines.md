@@ -187,17 +187,17 @@ This section goes over the general guidelines for the main backgrounds included 
     * Rocky 9: `Blue Onyx` - This should be generally a blue theme/color scheme. Submissions only to extras.
     * Rocky 10: `Red Quartz` - This should be generally a red-like theme/color scheme
 * **Required Resolution(s) for Normal Submissions**:
-    * Resolution must **not** exceed nor fall below: 3072x3072
+    * Resolution must **not** fall below: 3072x3072
     * Example resolutions: 4800x3600, 4096x3072, 3440x3440
 
 * **Allowed**:
     * Anything related to nature, mountains, rocks, and the like (generally fitting into the "rocky" idea)
-    * Anything related to the codename (eg. Blue Onyx)
+    * Anything related to the release codename (eg. Blue Onyx)
     * Anything minimalist/abstract is allowed
     * References to the release number (like 9, and so on) are allowed
     * Complementary colors should be allowed in the image within reason
     * Contrasting colors should be allowed in the image within reason
-    * Photography + Manipulation should be allowed within reason
+    * Photography + Manipulation should be allowed within reason - Random photos from image searches will not be accepted
     * **Highly Encouraged**: [Day](https://github.com/fedoradesign/backgrounds/blob/main/default/f40-01-day.png) and [Night](https://github.com/fedoradesign/backgrounds/blob/main/default/f40-01-night.png) versions of wallpapers
 
 * **Discouraged**:
@@ -209,7 +209,7 @@ This section goes over the general guidelines for the main backgrounds included 
 
 #### Minimum Resolutions
 
-For general submissions, we request a high resolution to make things simpler, that way the user should be able to use a wallpaper without having to choose "the right one" for their monitor size. However, for the case case of extra backgrounds, this requirement is more relaxed. If a submitter wishes not to use the highest resolution but opts to make multiple resolutions instead, they should follow the below list:
+For general submissions, we request a high resolution to make things simpler, that way the user should be able to use a wallpaper without having to choose "the right one" for their monitor size. This requirement is more relaxed for the extra backgrounds package. If a submitter wishes not to use the highest resolution but opts to make multiple resolutions instead, they should use the below list as a general guideline:
 
 * **Minimum Required Resolutions**:
     * 16:9 (1920x1080)
