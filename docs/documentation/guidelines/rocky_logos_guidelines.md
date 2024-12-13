@@ -178,9 +178,7 @@ Day/Night Wallpapers have a similar configuration.
 
 ### Guidelines
 
-This section goes over the general guidelines for the main backgrounds included in the distribution.
-
-**Note**: It is **highly recommended and encouraged** that a submission should be the highest resolution as noted below. See the [note](#minimum-resolutions) on minimum resolutions.
+This section goes over the general guidelines for the main backgrounds included in the distribution, including content and resolutions.
 
 #### General Theme
 
