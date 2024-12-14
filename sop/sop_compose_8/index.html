@@ -1251,6 +1251,11 @@
 
 <p>This SOP covers how the Rocky Linux Release Engineering Team handles composes and repository syncs for Rocky Linux 8. It contains information of the scripts that are utilized and in what order, depending on the use case.</p>
 <p>Please see the other SOP for Rocky Linux 9+ that are managed via empanadas and peridot.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>IF YOU HAVE BUILT ANY MODULES, YOU MUST UPDATE THE YAMLS MANUALLY AT /mnt/compose/8_metadata</strong>
+<strong>NOT DOING THIS WILL CAUSE ISSUES FOR COMPOSES AND THE USERS</strong></p>
+</div>
 <h2 id="contact-information">Contact Information<a class="headerlink" href="#contact-information" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
