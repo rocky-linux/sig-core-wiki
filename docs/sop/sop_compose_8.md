@@ -6,6 +6,10 @@ This SOP covers how the Rocky Linux Release Engineering Team handles composes an
 
 Please see the other SOP for Rocky Linux 9+ that are managed via empanadas and peridot.
 
+!!! warning
+    **IF YOU HAVE BUILT ANY MODULES, YOU MUST UPDATE THE YAMLS MANUALLY AT /mnt/compose/8_metadata**
+    **NOT DOING THIS WILL CAUSE ISSUES FOR COMPOSES AND THE USERS**
+
 ## Contact Information
 | | |
 | - | - |
