@@ -133,8 +133,10 @@ Once the syncs are done, staging must be tested and vetted before being sent to 
 
 ```
 # Set X to whatever release
-bash RLVER=X sync-to-prod.delete.sh
+RLVER=X bash sync-to-prod.delete.sh
 bash sync-file-list-parallel.sh
+# Sends data to the vault and masks repodata
+RLVER=X bash vault-release-no-repodata.sh
 ```
 
 During this phase, staging is rsynced with production, the file list is updated, and the full time list is also updated to allow mirrors to know that the repositories have been updated and that they can sync.

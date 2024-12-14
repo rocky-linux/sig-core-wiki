@@ -42,6 +42,17 @@ There is a designated system that takes care of composing repositories. These sy
 
 Each repository or set of repositories are controlled by various pungi configurations. For example, `r8.conf` will control the absolute base of Rocky Linux 8, which imports other git repository data as well as accompanying json or other configuration files.
 
+### Quick Compose
+
+On the designated compose box, there is a script that can do all of the incremental steps.
+
+```
+cd /root/cron
+bash stable-updates
+```
+
+After, it can be synced to production.
+
 ### Running a Compose
 
 Inside the `pungi` git repository, the folder `scripts` contain the necessary scripts that are ran to perform a compose. There are different types of composes:
@@ -135,17 +146,4 @@ During this phase, staging is rsynced with production, the file list is updated,
 
 **Note**: If multiple releases are being updated, it is important to run the syncs to completion before running the file list parallel script.
 
-## Quicker Composes
 
-On the designated compose box, there is a script that can do all of the incremental steps.
-
-```
-cd /root/cron
-bash stable-updates
-```
-
-The same goes for a full production.
-
-```
-bash stable
-```
