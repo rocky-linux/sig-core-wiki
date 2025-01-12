@@ -51,8 +51,8 @@ Each repository or set of repositories are controlled by various pungi configura
 On the designated compose box, there is a script that can do all of the incremental steps.
 
 ```
-cd /root/cron
-bash stable-updates
+cd /root/sync-devel/cron
+bash stable-updates-8
 ```
 
 After, it can be synced to production.
