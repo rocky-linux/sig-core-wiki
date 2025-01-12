@@ -7,7 +7,7 @@ This SOP covers how the Rocky Linux Release Engineering Team handles composes an
 Please see the other SOP for Rocky Linux 9+ that are managed via empanadas and peridot.
 
 !!! warning
-    **IF YOU HAVE BUILT ANY MODULES, YOU MUST UPDATE THE YAMLS MANUALLY AT /mnt/compose/8_metadata**
+    **IF YOU HAVE BUILT ANY MODULES, YOU MUST UPDATE THE YAMLS MANUALLY AT https://git.rockylinux.org/rocky/rocky-module-metadata**
     **NOT DOING THIS WILL CAUSE ISSUES FOR COMPOSES AND THE USERS**
 
 ## Contact Information
@@ -28,6 +28,8 @@ There are several git repositories used in the overall composition of a reposito
 [Comps](https://git.rockylinux.org/rocky/comps) - This repository contains all the necessary comps (which are groups and other data) for a given major version. Pungi uses this information to properly build the repositories.
 
 [Toolkit](https://github.com/rocky-linux/sig-core-toolkit) - This repository contains various scripts and utilities used by Release Engineering, such as syncing composes, functionality testing, and mirror maintenance.
+
+[Module Metadata](https://git.rockylinux.org/rocky/rocky-module-metadata) - This repository contains module metadata that is pushed into repodata data after createrepo is ran.
 
 ## Composing Repositories
 
