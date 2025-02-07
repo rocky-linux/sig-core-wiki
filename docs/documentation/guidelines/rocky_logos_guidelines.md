@@ -205,7 +205,7 @@ We request a high resolution to make things simpler for users to choose which th
     * Complementary colors should be allowed in the image within reason
     * Contrasting colors should be allowed in the image within reason
     * Photography + Manipulation should be allowed within reason - Random photos from image searches will not be accepted
-    * **Highly Encouraged**: [Day](https://github.com/fedoradesign/backgrounds/blob/main/default/f40-01-day.png) and [Night](https://github.com/fedoradesign/backgrounds/blob/main/default/f40-01-night.png) versions of wallpapers
+    * **Highly Encouraged**: [Day](https://github.com/rocky-linux/rocky-logos/blob/r9/backgrounds/rocky-default-9-abstract-1-day.png) and [Night](https://github.com/rocky-linux/rocky-logos/blob/r9/backgrounds/rocky-default-9-abstract-1-night.png)
 
 * **Discouraged**:
     * Avoid using the Rocky logo, unless it fits with an abstract/minimalist idea for the background
