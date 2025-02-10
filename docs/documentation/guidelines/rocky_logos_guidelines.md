@@ -214,6 +214,10 @@ We request a high resolution to make things simpler for users to choose which th
 * **Prohibited**:
     * Any AI generated artwork
 
+#### License
+
+Images will be/need to be licensed as Creative Commons Attribution ShareAlike 4.0 ([CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en)).
+
 ### Extras Package
 
 If a wallpaper does not make it to the main package, is simply Rocky inspired, or was simply submitted as an "extra" background, it has the opportunity to be placed into the rocky-backgrounds-extras package. The requirements are more relaxed for the extra backgrounds.
