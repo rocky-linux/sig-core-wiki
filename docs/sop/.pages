@@ -7,4 +7,5 @@ nav:
   - Compose and Repo Sync for Rocky Linux Special Interest Groups: sop_compose_sig.md
   - Generalized Prep Checklist for Upcoming Releases: sop_upstream_prep_checklist.md
   - Mirror Manager: sop_mirrormanager2.md
+  - Pungi and Comps Sync: sop_compose_data.md
 ...
