@@ -10,13 +10,13 @@
       
       
       
-        <link rel="canonical" href="https://sig-core.rocky.page/legacy/koji_tagging/">
+        <link rel="canonical" href="https://sig-core.rocky.page/sop/sop_compose_data/">
       
       
-        <link rel="prev" href="../debrand_list/">
+        <link rel="prev" href="../sop_mirrormanager2/">
       
       
-        <link rel="next" href="../../rpm/">
+        <link rel="next" href="../../events/meeting-notes/2024-03-18/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Koji Tagging Strategy - Release Engineering (SIG/Core) Wiki</title>
+        <title>Pungi and Comps Sync - Release Engineering (SIG/Core) Wiki</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#contact-information" class="md-skip">
+        <a href="#title-sop-pungi-and-comps-sync" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +111,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Koji Tagging Strategy
+              Pungi and Comps Sync
             
           </span>
         </div>
@@ -844,17 +844,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
@@ -869,7 +871,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             SOP
@@ -883,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -905,7 +907,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_release/" class="md-nav__link">
+      <a href="../sop_release/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -927,7 +929,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_8/" class="md-nav__link">
+      <a href="../sop_compose_8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -949,7 +951,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose/" class="md-nav__link">
+      <a href="../sop_compose/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -971,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_compose_sig/" class="md-nav__link">
+      <a href="../sop_compose_sig/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -993,7 +995,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_upstream_prep_checklist/" class="md-nav__link">
+      <a href="../sop_upstream_prep_checklist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1015,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sop/sop_mirrormanager2/" class="md-nav__link">
+      <a href="../sop_mirrormanager2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1034,10 +1036,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../sop/sop_compose_data/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Pungi and Comps Sync
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1047,6 +1068,108 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#title-sop-pungi-and-comps-sync" class="md-nav__link">
+    <span class="md-ellipsis">
+      title: 'SOP: Pungi and Comps Sync
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contact-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contact Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#related-git-repositories" class="md-nav__link">
+    <span class="md-ellipsis">
+      Related Git Repositories
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comps" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comps
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syncing-comps-from-upstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syncing Comps from Upstream
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pungi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pungi
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Pungi">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syncing-pungi-from-upstream" class="md-nav__link">
+    <span class="md-ellipsis">
+      Syncing Pungi from Upstream
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-off-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Branch-off Procedure
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1187,9 +1310,11 @@
   
 
 
-  <h1>Koji Tagging Strategy</h1>
+  <h1>Pungi and Comps Sync</h1>
 
-<p>This document covers how the Rocky Linux Release Engineering Team handles the tagging for builds in Koji and how it affects the overall build process.</p>
+<hr />
+<h2 id="title-sop-pungi-and-comps-sync">title: 'SOP: Pungi and Comps Sync<a class="headerlink" href="#title-sop-pungi-and-comps-sync" title="Permanent link">&para;</a></h2>
+<p>This SOP covers how the Rocky Linux Release Engineering Team handles the synchronization of pungi and comps data from upstream. This data is used to help with composes of all Rocky Linux releases.</p>
 <h2 id="contact-information">Contact Information<a class="headerlink" href="#contact-information" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -1208,6 +1333,10 @@
 <td>releng@rockylinux.org</td>
 </tr>
 <tr>
+<td><strong>Email Contact</strong></td>
+<td>infrastructure@rockylinux.org</td>
+</tr>
+<tr>
 <td><strong>Mattermost Contacts</strong></td>
 <td><code>@label</code> <code>@mustafa</code> <code>@neil</code> <code>@tgo</code></td>
 </tr>
@@ -1217,53 +1346,49 @@
 </tr>
 </tbody>
 </table>
-<h2 id="what-is-koji">What is Koji?<a class="headerlink" href="#what-is-koji" title="Permanent link">&para;</a></h2>
-<p>Koji is the build system used for Rocky Linux, as well as CentOS, Fedora, and likely others. Red Hat is likely to use a variant of Koji called "brew" with similar functionality and usage. Koji uses mock, a common RPM building utility, to build RPMs in a chroot environment.</p>
-<h2 id="architecture-of-koji">Architecture of Koji<a class="headerlink" href="#architecture-of-koji" title="Permanent link">&para;</a></h2>
-<h3 id="components">Components<a class="headerlink" href="#components" title="Permanent link">&para;</a></h3>
-<p>Koji comprises of multiple components:</p>
+<h2 id="related-git-repositories">Related Git Repositories<a class="headerlink" href="#related-git-repositories" title="Permanent link">&para;</a></h2>
+<p>There are several git repositories used in the overall composition of a repository or a set of repositories.</p>
+<p><a href="https://git.rockylinux.org/rocky/pungi-rocky">Pungi</a> - This repository contains all the necessary pungi configuration files that peridot translates into its own configuration. Pungi is no longer used for Rocky Linux.</p>
+<p><a href="https://git.rockylinux.org/rocky/comps">Comps</a> - This repository contains all the necessary comps (which are groups and other data) for a given major version. Peridot (and pungi) use this information to properly build repositories.</p>
+<h2 id="comps">Comps<a class="headerlink" href="#comps" title="Permanent link">&para;</a></h2>
+<p>Comps files define how packages are bundled for an installation. They typically define package groups and environments with varying settings for architectures and repository designations. A single "comps" file is split for each repository per architecture as necessary, which are then inserted into the repositories themselves. These comps help not only for users who run <code>dnf group list</code> or <code>dnf group install</code>, but it primarily aids in system installation through anaconda.</p>
+<h3 id="syncing-comps-from-upstream">Syncing Comps from Upstream<a class="headerlink" href="#syncing-comps-from-upstream" title="Permanent link">&para;</a></h3>
+<p>The comps repository has a single branch of "main". All scripts that are needed to sync from upstream are found in the <code>scripts</code> directory.</p>
+<div class="highlight"><pre><span></span><code>.
+├── commit                  -&gt; Used to determine what files were changed
+├── comps-distro-only.xsl   -&gt; Distribution specific settings
+├── conv-to-stable.sh       -&gt; Unused
+├── Makefile                -&gt; Only used when `make` is called in a pungi run
+├── sync-from-upstream      -&gt; Syncs CentOS Stream 9 comps data
+├── sync-from-upstream-10   -&gt; Syncs CentOS Stream 10 comps data
+└── update-comps            -&gt; Converts the synced comps file to a usable format
+</code></pre></div>
+<p>When running a sync, the typical order is:</p>
+<div class="highlight"><pre><span></span><code>bash scripts/sync-from-upstream
+bash scripts/sync-from-upstream-10
+bash scripts/commit
+git push origin main
+</code></pre></div>
+<h2 id="pungi">Pungi<a class="headerlink" href="#pungi" title="Permanent link">&para;</a></h2>
+<p>Pungi is a distribution compose tool. Composes are essentially a release snapshot, in which repositories are generated with comps, repodata, potential kickstart trees, and bootable ISO's. Pungi can do "full" runs which pretty much do everything listed, but it can also be instructed to do a simple snapshot and not create ISO's, for example.</p>
+<h3 id="syncing-pungi-from-upstream">Syncing Pungi from Upstream<a class="headerlink" href="#syncing-pungi-from-upstream" title="Permanent link">&para;</a></h3>
+<p>The pungi repository is sorted into different branches, based on the version that is being targetted. The format of the branches are like so:</p>
 <ul>
-<li><code>koji-hub</code>, which is the center of all Koji operations. It runs XML-RPC and relies on other components to call it for actions. This piece will also talk to the database and is one component that has write access to the filesystem.</li>
-<li><code>kojid</code>, which is the daemon that runs on the builder nodes. It's responsibility is to talk to the hub for actions in which it can or has to perform, for example, building an RPM or install images. But that is not all that it can do.</li>
-<li><code>koji-web</code> is a set of scripts that provides the web interface that anyone can see at our <a href="https://kojidev.rockylinux.org">koji</a>.</li>
-<li><code>koji</code> is the command line utility that is commonly used - It is a wrapper of the various API commands that can be called. In our environment, it requires a login via kerberos.</li>
-<li><code>kojira</code> is a component that ensures repodata is updated among the build tags.</li>
+<li><code>rX</code> (legacy)</li>
+<li><code>rX-beta</code> (legacy)</li>
+<li><code>rXs</code></li>
+<li><code>rX.Y</code></li>
 </ul>
-<h3 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h3>
-<p>Tags are the most important part of the koji ecosystem. With tags, you can have specific repository build roots for the entire distribution or just a simple subset of builds that should not polute the main build tags (for example, for SIGs where a package or two might be newer (or even older) than what's in BaseOS/AppStream.</p>
-<p>Using tags, you can setup what is called "inheritance". So for example. You can have a tag named <code>dist-rocky8-build</code> but it happens to inherit <code>dist-rocky8-updates-build</code>, which will likely have a newer set of packages than the former. Inheritance, in a way, can be considered setting "dnf priorities" if you've done that before. Another way to look at it is "ordering" and "what comes first".</p>
-<p>Targets call tags to send packages to build in, generally.</p>
-<h2 id="tag-strategy">Tag Strategy<a class="headerlink" href="#tag-strategy" title="Permanent link">&para;</a></h2>
-<p>The question that we get is "what's the difference between a build and an updates-build tag" - It's all about the inheritance. For example, let's take a look at <code>dist-rocky8-build</code></p>
-<div class="highlight"><pre><span></span><code>  dist-rocky8-build
-    el8
-    dist-rocky8
-    build-modules
-       . . .
+<p>During a sync from upstream, only the <code>rXs</code> branch receives changes. These changes are performed by running:</p>
+<div class="highlight"><pre><span></span><code>bash scripts/sync-from-upstream
+bash scripts/commit
 </code></pre></div>
-<p>In this tag, you can see that this build tag inherits el8 packages first, and then the packages in dist-rocky8, and then build-modules. This is where "base" packages start out at, generally and a lot of them won't be updated or even change with the lifecycle of the version.</p>
-<div class="highlight"><pre><span></span><code>dist-rocky8-updates-build
-    el8
-    dist-rocky8-updates
-        dist-rocky8
-    dist-rocky8-build
-        build-modules
+<p>Typically, only the "shared" directory receives modifications. All other overrides or changes specifically for Rocky Linux goes into the <code>rocky</code> or <code>rocky-lookahead</code> directory.</p>
+<h3 id="branch-off-procedure">Branch-off Procedure<a class="headerlink" href="#branch-off-procedure" title="Permanent link">&para;</a></h3>
+<p>When it is determined that the current commit for the <code>rXs</code> branch is no longer receiving changes for the upcoming release, it is simply branched off using regular git procedures and then pushed normally. Replace X and Y as needed.</p>
+<div class="highlight"><pre><span></span><code>git checkout -b rX.Y
+git push origin rX.Y
 </code></pre></div>
-<p>This one is a bit different. Notice that it inherits el8 first, and then dist-rocky8-updates, which inherits dist-rocky8. And then it also pulls in dist-rocky8-build, the previous tag we were talking about. This tag is where updates for a minor release are sent to.</p>
-<div class="highlight"><pre><span></span><code>dist-rocky8_4-updates-build
-    el8_4
-    dist-rocky8-updates
-        dist-rocky8
-    dist-rocky8-build
-        el8
-        build-modules
-</code></pre></div>
-<p>Here's a more interesting one. Notice something? It's pretty similar to the last one, but see how it's named el8_4 instead? This is where updates during 8.4 are basically sent to and that's how they get tagged as <code>.el8_4</code> on the RPM's. The <code>el8_4</code> tag contains a build macros package that instructs the <code>%dist</code> tag to be set that way. When 8.5 comes out, we'll basically have the same setup.</p>
-<p>At the end of the day, builds that happen in these updates-build tags get dropped in dist-rocky8-updates.</p>
-<h3 id="what-about-modules">What about modules?<a class="headerlink" href="#what-about-modules" title="Permanent link">&para;</a></h3>
-<p>Modules are a bit tricky. We generally don't touch how MBS does its tags or what's going on there. When builds are being done with the modules, they do end up using the el8 packages in some manner or form. The modules are separated entirely from the main tags though, so they don't polute the main tags. You don't want a situation where say, you build the latest ruby, but something builds off the default version of ruby provided in <code>el8</code> and now you're in trouble and get dnf filtering issues.</p>
-<h3 id="how-do-we-determine-what-is-part-of-a-compose">How do we determine what is part of a compose?<a class="headerlink" href="#how-do-we-determine-what-is-part-of-a-compose" title="Permanent link">&para;</a></h3>
-<p>There are special tags that have a <code>-compose</code> suffix. These tags are used as a way to pull down packages for repository building during the pungi process.</p>
 
 
 
@@ -1284,7 +1409,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-03-04
+    2025-02-11
   </span>
 
     
