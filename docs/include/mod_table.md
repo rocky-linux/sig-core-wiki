@@ -67,7 +67,6 @@
     | fwupd                 | Patch           | Secure Boot                                             |
     | grub2                 | Patch           | Secure Boot                                             |
     | kernel                | Patch, Branding | Secure Boot                                             |
-    | kernel-rt             | Patch, Branding | Secure Boot                                             |
     | rocky-release         | Self-managed    | Required for Rocky Linux to be itself                   |
     | rocky-logos           | Self-managed    | Required for Rocky Linux assets                         |
     | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                  |
@@ -118,7 +117,6 @@
     | fwupd-efi             | Patch           | Secure Boot                                                 |
     | grub2                 | Patch           | Secure Boot                                                 |
     | kernel                | Patch, Branding | Secure Boot and Branding                                    |
-    | kernel-rt             | Patch, Branding | Secure Boot and Branding                                    |
     | rocky-release         | Self-managed    | Required for Rocky Linux to be itself                       |
     | rocky-logos           | Self-managed    | Required for Rocky Linux assets                             |
     | rocky-indexhtml       | Self-managed    | Required for Rocky Linux default index                      |
@@ -132,7 +130,6 @@
     | firefox               | Patch           | Replace Red Hat settings with Rocky Linux settings          |
     | gcc                   | Patch           | Change bug tracker URL                                      |
     | gdb                   | Patch           | Replace Red Hat with Rocky Linux                            |
-    | java-17-openjdk*      | Patch           | Ensure portables are buildable on all releases              |
     | java-21-openjdk*      | Patch           | Ensure portables are buildable on all releases              |
     | libdnf                | Patch           | Change bug tracker URL                                      |
     | lorax-templates-rocky | Self-managed    | Replacement for lorax-templates-rhel                        |
@@ -142,7 +139,7 @@
     | osbuild               | Patch           | Ensure Rocky Linux is supported                             |
     | osbuild-composer      | Patch           | Ensure Rocky Linux is supported                             |
     | PackageKit            | Patch           | Change support URL's to Rocky Linux wiki                    |
-    | redhat-rpm-config     | Patch           | Add Rocky Support                                           |
+    | redhat-rpm-config     | Patch           | Add Rocky Support and enable riscv64                        |
     | rust                  | Patch           | Ensure that aarch64 and s390x can build rust (OOM)          |
     | scap-security-guide   | Patch           | Ensure Rocky Linux is supported as a derivative             |
     | subscription-manager* | Patch           | Remove Red Hat references                                   |
