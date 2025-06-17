@@ -25,8 +25,6 @@ There are several git repositories used in the overall composition of a reposito
 
 [Toolkit](https://github.com/rocky-linux/sig-core-toolkit) - This repository contains various scripts and utilities used by Release Engineering, such as syncing composes, functionality testing, and mirror maintenance.
 
-[Module Metadata](https://git.rockylinux.org/rocky/rocky-module-metadata) - This repository contains module metadata that is pushed into repodata data after createrepo is ran.
-
 ## Composing Repositories
 
 For every stable script, there is an equal beta or lookahead script available.
