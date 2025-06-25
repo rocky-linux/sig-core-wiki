@@ -6,11 +6,12 @@ Release Engineering (SIG/Core) is a mix of Development and Infrastructure member
 
 | Role                                              | Name                            | Email                   | Mattermost Name   | IRC Name           | Affiliation |
 |---------------------------------------------------|---------------------------------|------------------------ |-------------------|--------------------|-------------|
+| Release Engineering Lead                          | Louis Abel                      | label@rockylinux.org    | @label            | Sokel/label/Sombra | Independent |
 | Release Engineering Co-Lead                       | Mustafa Gezen                   | mustafa@rockylinux.org  | @mustafa          | mstg               | Independent |
 | Release Engineering and Development               | Skip Grube                      | skip@rockylinux.org     | @skip77           |                    | CIQ         |
 | Release Engineering and Development               | Sherif Nagy                     | sherif@rockylinux.org   | @sherif           |                    | Independent |
 | Release Engineering and Development               | Pablo Greco                     | pgreco@rockylinux.org   | @pgreco           | pgreco             | Independent |
-| Infrastructure Lead                               | Neil Hanlon                     | neil@resf.org           | @neil             | neil               | CIQ         |
+| Infrastructure Lead                               | Neil Hanlon                     | neil@resf.org           | @neil             | neil               | Independent |
 | Infrastructure Lead                               | Taylor Goodwill                 | tg@resf.org             | @tgo              | tg                 | Independent |
 
 !!! note

@@ -56,7 +56,7 @@
 
     | Name                            | Email                   | Mattermost Name   | IRC Name           |
     |---------------------------------|-------------------------|-------------------|--------------------|
-    | Louis Abel                      | label@rockylinux.org    | @nazunalika       | Sokel/label/Sombra |
+    | Louis Abel                      | label@rockylinux.org    | @label            | Sokel/label/Sombra |
     | Mustafa Gezen                   | mustafa@rockylinux.org  | @mustafa          | mstg               |
     | Skip Grube                      | skip@rockylinux.org     | @skip77           |                    |
     | Sherif Nagy                     | sherif@rockylinux.org   | @sherif           |                    |
