@@ -10,24 +10,22 @@ repo_url: https://git.resf.org/sig_core/wiki
 repo_name: sig_core/wiki
 edit_uri: edit/main/docs/
 
+extra_css:
+  - assets/extra.css
+
 theme:
   name: material
   palette:
     - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: teal
+      scheme: resf
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: teal
+      scheme: resf-dark
       toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-  logo: assets/icon-white.svg
+        icon: material/weather-sunny
+        name: Switch to light mode
   highlightjs: true
   hljs_languages:
     - bash
@@ -61,9 +59,9 @@ markdown_extensions:
 plugins:
   - autolinks
   - awesome-pages
-  - git-revision-date
+  - git-revision-date-localized
   - search
   - macros:
       include_dir: docs/include
-copyright: Copyright &copy; 2024 Rocky Enterprise Software Foundation
+copyright: Copyright &copy; 2025 Rocky Enterprise Software Foundation
 ...

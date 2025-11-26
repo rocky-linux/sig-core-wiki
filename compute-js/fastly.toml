@@ -1,0 +1,26 @@
+# This file describes a Fastly Compute package. To learn more visit:
+# https://www.fastly.com/documentation/reference/compute/fastly-toml
+
+authors = ["neil@resf.org"]
+description = "SIG/Core Wiki"
+language = "javascript"
+manifest_version = 3
+name = "sig-core-wiki"
+service_id = "jts5aMOl6ot5Sa0WDI8fga"
+
+[local_server]
+
+  [local_server.kv_stores]
+
+    [local_server.kv_stores.sig_core]
+      file = "./static-publisher/kvstore.json"
+      format = "json"
+
+[scripts]
+  build = "npm run build"
+
+[setup]
+
+  [setup.kv_stores]
+
+    [setup.kv_stores.sig_core]
