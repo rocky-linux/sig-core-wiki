@@ -4,11 +4,10 @@ title: 'SOP: Compose and Repo Sync for Rocky Linux 9'
 
 This SOP covers how the Rocky Linux Release Engineering Team handles composes and repository syncs for Rocky Linux 9. It contains information of the scripts that are utilized and in what order, depending on the use case.
 
-Please see the other SOP for Rocky Linux 9+ that are managed via empanadas and peridot.
-
 !!! warning
     **IF YOU HAVE BUILT ANY MODULES, YOU MUST UPDATE THE YAMLS MANUALLY AT https://git.rockylinux.org/rocky/rocky-module-metadata**
     **NOT DOING THIS WILL CAUSE ISSUES FOR COMPOSES AND THE USERS**
+    **THIS CAN BE DONE BY CLONING THE REPO, CHECKOUT THE BRANCH AND RUN:** `bash pull <BUILD> <REPO>`
 
 ## Contact Information
 | | |
