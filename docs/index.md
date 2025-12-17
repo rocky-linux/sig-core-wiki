@@ -20,7 +20,7 @@ The general goals (or "interests") is:
 
 Release Engineering strives to ensure a stable distribution is developed, built, tested, and provided to the community from the RESF as a compatible derivative of Red Hat Enterprise Linux. To achieve this goal, some of the things we do are:
 
-* Ensuring a quality and fully compatible release product
+* Ensuring a quality and a release product that is fully compatible with the upstream vendor
 * Developing and iterating on the build systems and architecture
 * Developing all code in the open
 * Setting the technical direction for the build system architecture

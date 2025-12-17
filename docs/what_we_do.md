@@ -8,7 +8,7 @@ Some of the things we do in pursuit of our mission goals:
 
 * Continuous preparation for upcoming changes from upstream (Fedora and CentOS Stream)
 * Distribution release and maintenance
-* Design and collaboration for the Peridot build system
+* Design and collaboration for the build systems in use
 * Design and development work to integrate all components together
 * Maintenance of the infrastructure used to build and maintain Rocky Linux (such as ansible roles and playbooks)
 * Working with the testing team with images and a platform to test
