@@ -1,3 +1,12 @@
+=== "Rocky Linux 8"
+
+    | Package Name          | Added           |
+    |-----------------------|-----------------|
+    | open-vm-tools         | 8.6             |
+    | nmon                  | 8.10            |
+    | iftop                 | 8.10            |
+    | 7zip*                 | 8.10            |
+
 === "Rocky Linux 9"
 
     | Package Name          | Added           |
