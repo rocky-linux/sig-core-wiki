@@ -52,6 +52,7 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
@@ -59,11 +60,9 @@ markdown_extensions:
       permalink: true
 
 plugins:
-  - autolinks
-  - awesome-pages
-  - git-revision-date
   - search
-  - macros:
-      include_dir: docs/include
+  - autolinks
+  - awesome-nav
+  - git-revision-date-localized
 copyright: Copyright &copy; 2026 Rocky Enterprise Software Foundation
 ...
