@@ -11,7 +11,7 @@ repo_name: sig_core/wiki
 edit_uri: edit/main/docs/
 
 theme:
-  name: material
+  variant: classic
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
